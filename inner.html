@@ -10,17 +10,57 @@
         <a href="index.html"><img src="img/index-logo.svg">
         <ul class="navigation-site">
           <li><a class="navigation-backlight" href="inner.html">Каталог</a></li>
-          <li><a class="navigation-nobacklight" href="#">ДОставка и оплата</a></li>
+          <li><a class="navigation-nobacklight" href="#">Доставка и оплата</a></li>
           <li><a class="navigation-nobacklight" href="#">О компании</a></li>
         </ul>
         <ul class="navigation-user">
-          <li class="search"></li>
+          <li class="search"><a href="#">ЛУПА</a></li>
           <li class="login">Вход</li>
           <li class="basket-backlight">basket</li>
         </ul>
       </nav>
       <p class="header-timetable">С 10 до 20, ежедневно</p>
       <p class="header-phone-nbr">8 812 450-25-25</p>
+      <form>
+        <input type="text" placeholder="Что ищем?">
+      </form>
+      <select>
+          <optgroup>
+          <option class="new_items"><a href="#">Новинки</a></option>
+          </optgroup>
+          <optgroup>
+          <option class="creamy"><a href="#">Сливочное</a></option>
+          <option class="sorbet"><a href="#">Щербеты</a></option>
+          <option class="fruit ice"><a href="#">Фруктовый лед</a></option>
+          <option class="melorin"><a href="#">Мелорин</a></option>
+          </optgroup> 
+        </select>
+        <form>
+          <input type="email" name="email" placeholder="Электронная почта" required>
+          <input type="password" name="password" placeholder="Пароль" required>
+          <a class="form_support" href="#">Забыли пароль?</a>
+          <a class="form_support" href="#">Новая регистрация</a>
+          <input type="submit" value="Войти">
+        </form> 
+        <section class="basket-form">
+          <ul class="basket-list">
+            <li class="pre-image1">
+              <span class="gllacy-name">Пломбир с апельсиновым джемом</span>
+              <span class="gllacy-weight">1,5 кг х</span>
+              <span class="gllacy-kg-value">200 руб.</span>
+              <span class="gllacy-value">300 руб.</span>
+            </li>
+            <li class="pre-image2">
+                <span class="gllacy-name">Клубничный пломбир с присыпкой из белого шоколада</span>
+                <span class="gllacy-weight">1,5 кг х</span>
+                <span class="gllacy-kg-value">300 руб.</span>
+                <span class="gllacy-value">450 руб.</span>
+              </li>
+            </ul>
+            <h3 class="all-value">Итого:</h3>
+            <p class="all-value">750 руб.</p> 
+            <input type="submit" name="send-button" value="Оформить заказ">  
+        </section>
     </header>
     <main>
       <nav class="navigation-inner">
