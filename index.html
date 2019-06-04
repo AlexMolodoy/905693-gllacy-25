@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="header-main">
@@ -23,24 +26,24 @@
         </ul>
         <ul class="navigation-user">
           <li class="search"><a href="#">ЛУПА</a></li>
-          <li class="login">Вход</li>
-          <li class="basket">basket</li>
+          <li class="login"><a href="#">Вход</a></li>
+          <li class="basket"><a href="#">basket</a></li>
         </ul>
       </nav>
       <p class="header-timetable">С 10 до 20, ежедневно</p> 
       <p class="header-phone-nbr">8 812 450-25-25</p>
-      <form action="https://echo.htmlacademy.ru">
+      <form class="search-form" action="https://echo.htmlacademy.ru">
           <input type="text" placeholder="Что ищем?">
       </form>
-        <form action="https://echo.htmlacademy.ru">
+        <form class="email-form" action="https://echo.htmlacademy.ru">
             <input type="email" name="email" placeholder="Электронная почта" required>
             <input type="password" name="password" placeholder="Пароль" required>
             <a class="form_support" href="#">Забыли пароль?</a>
             <a class="form_support" href="#">Новая регистрация</a>
             <input type="submit" value="Войти">
         </form> 
-        <form action="https://echo.htmlacademy.ru">
-          <h1 class="feedback-form">Мы обязательно вам ответим!</h1>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru">
+          <h1 class="feedback-form-text">Мы обязательно вам ответим!</h1>
           <input type="text" name="login" placeholder="Как вас зовут?">
           <input type="email" name="email" placeholder="Ваша почта для ответа">
           <input type="text" name="feedback" placeholder="Напишите что-нибудь...">
@@ -169,9 +172,9 @@
       <p class="footer-text">
         
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="button"><img src="img/logo-htmlacademy.svg">HTML Academy</a>
-        <b>Сделано в</b>
+        <b class="techno-info">Сделано в</b>
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="link-style">HTMLAcademy</a>
-        <b>2017</b>
+        <b class="techno-info">2019</b>
       </p>
     </footer>
   </body>
