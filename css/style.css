@@ -21,14 +21,32 @@ body {
   color: #ffffff;
 }
 
-.footer-main{
+.text-rich{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.text-thin{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   color: #ffffff;
 }
 
-.footer-main .techno-info{
+.techno-info{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 12px;
   color: #ffffff;
+}
+
+.visually-hidden{
+  visibility: hidden;
+}
+
+.html-button{
+  font-size: 0%;
+}
+
+.search{
+  background-image: url(/img/loupe.svg);
 }
