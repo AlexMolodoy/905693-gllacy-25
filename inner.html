@@ -8,60 +8,48 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="header-main">
-      <nav class="navigation-main">
-        <a href="index.html"><img src="img/logo.svg">
-        <ul class="navigation-site">
-          <li><a class="navigation-backlight" href="inner.html">Каталог</a>
-            <ul class="submenu">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="#">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
+      <header class="header-main">
+          <nav class="navigation-main">
+            <a><img src="img/logo.svg"></a>
+            <ul class="navigation-site">
+                <li><a class="navigation-nobacklight" href="inner.html">Каталог</a>
+                  <ul class="submenu">
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Сливочное</a></li>
+                    <li><a href="#">Щербеты</a></li>
+                    <li><a href="#">Фруктовый лед</a></li>
+                    <li><a href="#">Мелорин</a></li>
+                  </ul>
+                </li>
+                <li><a class="navigation-nobacklight" href="#">Доставка и оплата</a></li>
+                <li><a class="navigation-nobacklight" href="#">О компании</a></li>
             </ul>
-          </li>
-          <li><a class="navigation-nobacklight" href="#">Доставка и оплата</a></li>
-          <li><a class="navigation-nobacklight" href="#">О компании</a></li>
-        </ul>
-        <ul class="navigation-user">
-            <li class="search"><a href="#">ЛУПА</a></li>
-            <li class="login"><a href="#">Вход</a></li>
-            <li class="basket"><a href="#">basket</a></li>
-        </ul>
-      </nav>
-      <p class="header-timetable">С 10 до 20, ежедневно</p>
-      <p class="header-phone-nbr">8 812 450-25-25</p>
-      <form action="https://echo.htmlacademy.ru">
-        <input type="text" placeholder="Что ищем?">
-      </form>
-        <form action="https://echo.htmlacademy.ru">
-          <input type="email" name="email" placeholder="Электронная почта" required>
-          <input type="password" name="password" placeholder="Пароль" required>
-          <a class="form_support" href="#">Забыли пароль?</a>
-          <a class="form_support" href="#">Новая регистрация</a>
-          <input type="submit" value="Войти">
-        </form> 
-        <section class="basket-form">
-          <ul class="basket-list">
-            <li class="pre-image1">
-              <span class="gllacy-name">Пломбир с апельсиновым джемом</span>
-              <span class="gllacy-weight">1,5 кг х</span>
-              <span class="gllacy-kg-value">200 руб.</span>
-              <span class="gllacy-value">300 руб.</span>
-            </li>
-            <li class="pre-image2">
-                <span class="gllacy-name">Клубничный пломбир с присыпкой из белого шоколада</span>
-                <span class="gllacy-weight">1,5 кг х</span>
-                <span class="gllacy-kg-value">300 руб.</span>
-                <span class="gllacy-value">450 руб.</span>
-              </li>
+            <ul class="navigation-user">
+              <li><a href="#" class="search">ЛУПА</a></li>
+              <li><a href="#" class="login">Вход</a></li>
+              <li><a href="#" class="basket">basket</a></li>
             </ul>
-            <h3 class="all-value">Итого:</h3>
-            <p class="all-value">750 руб.</p> 
-            <input type="submit" name="send-button" value="Оформить заказ">  
-        </section>
-    </header>
+          </nav>
+          <p class="header-timetable">С 10 до 20, ежедневно</p> 
+          <p class="header-phone-nbr">8 812 450-25-25</p>
+          <form class="search-form" action="https://echo.htmlacademy.ru">
+              <input type="text" placeholder="Что ищем?">
+          </form>
+            <form class="email-form" action="https://echo.htmlacademy.ru">
+                <input type="email" name="email" placeholder="Электронная почта" required>
+                <input type="password" name="password" placeholder="Пароль" required>
+                <a class="form_support" href="#">Забыли пароль?</a>
+                <a class="form_support" href="#">Новая регистрация</a>
+                <input type="submit" value="Войти">
+            </form> 
+            <form class="feedback-form" action="https://echo.htmlacademy.ru">
+              <h1 class="feedback-form-text">Мы обязательно вам ответим!</h1>
+              <input type="text" name="login" placeholder="Как вас зовут?">
+              <input type="email" name="email" placeholder="Ваша почта для ответа">
+              <input type="text" name="feedback" placeholder="Напишите что-нибудь...">
+              <input type="submit" name="send-button" value="Отправить">
+            </form>
+        </header>
     <main>
       <nav class="navigation-inner">
         <ul class="navigation-inner-list">
@@ -69,6 +57,7 @@
           <li><a class="navigation-inner-link" href="inner.html">Каталог</a></li>
           <li><span class="navigation-inner-link">Сливочное</span></li>
         </ul>
+        <h1 class="gllacy-category">Сливочное мороженое</h1>
       </nav>
       <nav class="navigation-gllacy">
         <ul class="gllacy-list">
@@ -160,25 +149,26 @@
       </nav>
     </main>
     <footer class="footer-main">
-      <h4 class="hidden">социальные сети</h4>
-      <ul>
-          <li><a class="social-button" href="#"><img src="img/twitter.svg">Twitter</a></li>
-          <li><a class="social-button" href="#"><img src="img/instagram.svg">Instagram</a></li>
-          <li><a class="social-button" href="#"><img src="img/fb.svg">Facebook</a></li>
-          <li><a class="social-button" href="#"><img src="img/vk.svg">Vkontakte</a></li>
+        <h4 class="visually-hidden">социальные сети</h4>
+        <ul>
+          <li><a class="social-button" href="#"><img src="img/twitter.svg"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a class="social-button" href="#"><img src="img/instagram.svg"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="social-button" href="#"><img src="img/fb.svg"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-button" href="#"><img src="img/vk.svg"><span class="visually-hidden">Vkontakte</span></a></li>
         </ul>
-      <ul>
-        <li class="text-rich"><a href="#">Для поставщиков</a></li>
-        <li class="text-thin"><a href="#">О производстве</a></li>
-        <li class="text-thin"><a href="#">Наши документы</a></li>
-        <li class="text-thin"><a href="#">Экологические стандарты</a></li>
-      </ul>  
-      <p class="footer-text">      
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="button"><img src="img/logo-htmlacademy-small.svg">HTML Academy</a>
+        <ul>
+          <li><a href="#"  class="text-rich">Для поставщиков</a></li>
+          <li><a href="#" class="text-thin">О производстве</a></li>
+          <li><a href="#" class="text-thin">Наши документы</a></li>
+          <li><a href="#" class="text-thin">Экологические стандарты</a></li>
+        </ul>
+  
+        <p class="footer-text">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-button"><img src="img/logo-htmlacademy.svg">HTML Academy</a>
           <b class="techno-info">Сделано в</b>
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="link-style">HTMLAcademy</a>
           <b class="techno-info">2019</b>
-      </p>
-    </footer>
+        </p>
+      </footer>
   </body>
 </html>

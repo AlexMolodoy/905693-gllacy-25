@@ -49,4 +49,65 @@ body {
 
 .search{
   background-image: url(/img/loupe.svg);
+  background-position: 0 0;
+}
+
+.about-gllacy-head{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  color: #323232;
+}
+
+.about-gllacy-production{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #323232;
+}
+.link-font{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #323232;
+}
+
+.link-font-head{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #5a5a5a;
+}
+
+.navigation-inner-link{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+.gllacy-category{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.gllacy-element{
+  color: #ffffff;
+}
+
+.price, 
+.price-value{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.weight{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 39px;
+  font-weight: bold;
+}
+
+.about-gllacy{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+  color: #ffffff;
 }
