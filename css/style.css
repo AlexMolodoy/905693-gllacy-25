@@ -13,9 +13,7 @@ body {
   width: 1200 px;
 }
 
-.navigation-nobacklight, 
-.login,
-.basket{
+.navigation-nobacklight{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #ffffff;
@@ -47,9 +45,39 @@ body {
   font-size: 0%;
 }
 
+.navigation-user{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
 .search{
-  background-image: url(/img/loupe.svg);
-  background-position: 0 0;
+  color: transparent;
+  background-image: url(../img/loupe.svg);
+  background-repeat: no-repeat;
+}
+
+.login{
+
+  background-image: url(../img/entrance.svg);
+  background-repeat: no-repeat;
+}
+
+.basket{
+  background-image: url(../img/basket.svg);
+  background-repeat: no-repeat;  
+}
+
+.entry-text{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.gllacy-blog-news{
+  background-image: url(../img/strawberry.jpg);
+  background-repeat: no-repeat;
+  border-radius: 10px;
 }
 
 .about-gllacy-head{
@@ -90,6 +118,10 @@ body {
 
 .gllacy-element{
   color: #ffffff;
+}
+
+.radius{
+  border-radius: 50%;
 }
 
 .price, 
