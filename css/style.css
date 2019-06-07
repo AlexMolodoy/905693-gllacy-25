@@ -57,22 +57,23 @@ body {
 }
 
 .login{
-
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 20px;
   background-image: url(../img/entrance.svg);
   background-repeat: no-repeat;
 }
 
 .basket{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 0 20px;
   background-image: url(../img/basket.svg);
   background-repeat: no-repeat;  
 }
 
-.entry-text{
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
-  color: #ffffff;
-  padding: 20px;
-}
 
 .gllacy-blog-news{
   background-image: url(../img/strawberry.jpg);
