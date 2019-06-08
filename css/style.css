@@ -1,14 +1,16 @@
 .submenu, 
 .search-form, 
-.email-form, 
-.feedback-form{
+.feedback-form,
+.email-form {
   display: none;
 }
 
 body {
   margin: 0;
 
-  background-color : #849d8f;
+  padding-left: 27px;
+  padding-right: 27px;
+  background-color: #849d8f;
   height: 2416 px;
   width: 1200 px;
 }
@@ -74,11 +76,38 @@ body {
   background-repeat: no-repeat;  
 }
 
+.social{
+  display: flex;
+}
 
 .gllacy-blog-news{
   background-image: url(../img/strawberry.jpg);
   background-repeat: no-repeat;
   border-radius: 10px;
+  width: 560px;
+  min-height: 220px;
+}
+
+.mailing{
+  width: 550px;
+  min-height: 210px;
+  background-color: #f8f7f4;
+  border-radius: 10px;
+  
+}
+
+.footer-main {
+  display: flex;
+
+}
+
+.outline-mail{
+  width: 560px;
+  height: 220px;  
+  border-radius: 10px;
+  background-image: url(../img/mail.jpg); 
+  display: flex;
+  align-items: center;
 }
 
 .about-gllacy-head{
@@ -87,11 +116,46 @@ body {
   color: #323232;
 }
 
-.about-gllacy-production{
+.about-gllacy-list{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #323232;
+  display: flex;
 }
+
+.new-container{
+  display: flex;
+  justify-content: space-between;
+  min-width: 1146px;
+  padding: 27px;
+  align-items: center;
+  
+}
+
+.tech-production{
+  padding: 0 50px;
+  background-image: url(../img/ice-cream.svg);
+  background-repeat: no-repeat;
+}
+
+.eco-production{
+  padding: 0 50px;
+  background-image: url(../img/eco.svg);
+  background-repeat: no-repeat;
+}
+
+.cow-production{
+  padding: 0 50px;
+  background-image: url(../img/cow.svg);
+  background-repeat: no-repeat;
+}
+
+.therm-production{
+  padding: 0 50px;
+  background-image: url(../img/thermometer.svg);
+  background-repeat: no-repeat;
+}
+
 .link-font{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 24px;
@@ -139,13 +203,16 @@ body {
 }
 
 .about-gllacy{
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  font-weight: medium;
-  color: #ffffff;
+  border-radius: 10px;
+  background-image: url(../img/wafer.jpg);
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  min-width: 1146px;
 }
 
-/*---------------*/
+
+/*---------------
 
 body > *{
   background: rgba(255, 255, 0, 0.2)
@@ -162,7 +229,29 @@ body > * > * > * > *{
   background: rgba(0, 0, 255, 0.2)
 }
 /*---------------*/
-.main-navigation {
+.main-header {
+  min-width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
+.container, .inner-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.navigation-site {
+  width: 853;
+  padding: 0 0;
+  margin: 0 0;;
+}
+
+.navigation-user{                         
+  width: 246;
+  padding: 0 0;
+  margin: 0 0;;
+}
+
