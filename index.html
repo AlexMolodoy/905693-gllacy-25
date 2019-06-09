@@ -10,9 +10,7 @@
   <body>
     <header class="header-main">
       <nav class="navigation-main">
-        <div class="container">
           <ul class="navigation-site">
-            <div class="inner-container">
               <li><a><img src="img/logo.svg"></a></li>
               <li><a class="navigation-nobacklight" href="inner.html">Каталог</a>
                 <ul class="submenu">
@@ -25,16 +23,15 @@
               </li>
               <li><a class="navigation-nobacklight" href="#">Доставка и оплата</a></li>
               <li><a class="navigation-nobacklight" href="#">О компании</a></li>
-            </div>
+           
           </ul>
           <ul class="navigation-user">
-              <div class="inner-container">
                 <li><a href="#" class="search">Search</a></li>
                 <li><a href="#" class="login"><span class="entry-text">Вход</span></a></li>
                 <li><a href="#" class="basket"><span class="entry-text">Пусто</span></a></li>
-              </div>
+            
           </ul>
-        </div>
+
       </nav>
       <!--
       <p class="header-timetable">С 10 до 20, ежедневно</p> 
@@ -46,8 +43,8 @@
         <form class="email-form" action="https://echo.htmlacademy.ru">
             <input type="email" name="email" placeholder="Электронная почта" required>
             <input type="password" name="password" placeholder="Пароль" required>
-            <a class="form_support" href="#">Забыли пароль?</a>
-            <a class="form_support" href="#">Новая регистрация</a>
+            <a class="form-support" href="#">Забыли пароль?</a>
+            <a class="form-support" href="#">Новая регистрация</a>
             <input type="submit" value="Войти">
         </form> 
         <form class="feedback-form" action="https://echo.htmlacademy.ru">
@@ -114,7 +111,6 @@
          по продаже мороженого собственного производства на развес</h2>
       <!--Вафля фон-->
       <ul class="about-gllacy-list">
-        <div class="product-container">
           <li class="tech-production">Все наше мороженое изготавливается 
           на собственном производстве, с использованием современного оборудования 
           и проверенных временем <br>
@@ -122,14 +118,11 @@
         <li class="eco-production">Для приготовления мороженого используются 
           настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и 
           добавки произведены из натурального, экологически чистого сырья.</li>
-          </div>
-          <div class="product-container">
         <li class="cow-production">Закупка ингредиентов  производится только у проверенных 
           фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
         <li class="therm-production">Доставка нашего мороженого до заказчиков 
           осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет 
           сохранить превосходный вкус.</li>
-        </div>
       </ul>
     </section>
     <div class="new-container">
@@ -163,31 +156,29 @@
     </main>
     <footer class="footer-main">
       <h4 class="visually-hidden">социальные сети</h4>
-      <ul>
-        <div class="social">
-          <li><a class="social-button" href="#"><img src="img/twitter.svg"><span class="visually-hidden">Twitter</span></a></li>
-          <li><a class="social-button" href="#"><img src="img/instagram.svg"><span class="visually-hidden">Instagram</span></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb.svg"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a class="social-button" href="#"><img src="img/vk.svg"><span class="visually-hidden">Vkontakte</span></a></li>
-        </div>
+      <ul class="icon-size">
+        <li><a class="social-button" href="#"><img src="img/twitter.svg"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="social-button" href="#"><img src="img/instagram.svg"><span class="visually-hidden">Instagram</span></a></li>
+        <li><a class="social-button" href="#"><img src="img/fb.svg"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="social-button" href="#"><img src="img/vk.svg"><span class="visually-hidden">Vkontakte</span></a></li>
       </ul>
-      <ul>
-        <div class="social">
-          <li><a href="#"  class="text-rich">Для поставщиков</a></li>
-          <li><a href="#" class="text-thin">О производстве</a></li>
-        </div>
-        <div class="social">
-          <li><a href="#" class="text-thin">Наши документы</a></li>
-          <li><a href="#" class="text-thin">Экологические стандарты</a></li>
-        </div>
+      <ul class="social-size">
+        <li><a href="#"  class="text-rich">Для поставщиков</a></li>
+        <li><a href="#" class="text-thin">Наши документы</a></li>
+        <li><a href="#" class="text-thin">О производстве</a></li>
+        <li><a href="#" class="text-thin">Экологические стандарты</a></li>
       </ul>
 
-      <p class="footer-text">
+      <div class="html-block">
+        <div class="html-img">
           <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-button"><img src="img/logo-htmlacademy.svg" height="39px" width="108px">HTML Academy</a>
-          <b class="techno-info">Сделано в</b>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" class="link-style">HTMLAcademy</a>
-          <b class="techno-info">2019</b>
-      </p>
+        </div>
+        <div class="html-text">
+            <b class="techno-info">Сделано в</b>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="techno-info">HTMLAcademy</a>
+            <b class="techno-info">2019</b>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
