@@ -2,6 +2,8 @@ body {
   margin: 0 0;
   background-color: #849d8f;
   width: 1200 px;
+  padding-left: 27px;
+  padding-right: 27px;
 }
 
 /* header styles */
@@ -43,6 +45,33 @@ body {
   display: flex;
   align-items: center;
   list-style:none;
+}
+
+.operation-mode{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 70px;
+}
+
+.header-timetable{
+  text-align: right;
+  margin: 0;
+  width: 162px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.header-phone-nbr{
+  text-align: right;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  width: 167px;
 }
 
 .submenu{
@@ -95,12 +124,45 @@ body {
 
 /* index page styles */
 
+.huge-gllacy{
+ /* background-image: url();*/
+ background-color: red;
+
+}
+
+.ice-pairs{}
+
+.stock{
+  font-family: "Roboto", Arial, sans-serif;
+  color: #ffffff;
+  list-style: none;
+  padding: 0 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1146px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.stock-raspberries{
+  background-image: url(../img/raspberry.jpg);
+  border-radius: 10px;
+  width: 560px;
+}
+
+.stock-chocolate{
+  background-image: url(../img/chocolate.jpg);
+  border-radius: 10px;
+  width: 560px;
+}
+
 .about-gllacy{
   border-radius: 10px;
   background-image: url(../img/wafer.jpg);
   margin-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   width: 1146px;
   height: 306px;
   padding-left: 27px;
@@ -194,12 +256,18 @@ body {
   color: #ffffff;
 }
 
-.navigation-gllacy{}
+.navigation-gllacy{
+  margin-left: 0;
+  margin-right: 0;
+  width: 1200px;
+  padding: 0 0;
+}
 
 .gllacy-list{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  padding: 0 0;
 }
 
 .gllacy-element{
