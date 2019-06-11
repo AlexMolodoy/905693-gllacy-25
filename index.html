@@ -29,7 +29,6 @@
                 <li><a href="#" class="search">Search</a></li>
                 <li><a href="#" class="login"><span class="entry-text">Вход</span></a></li>
                 <li><a href="#" class="basket"><span class="entry-text">Пусто</span></a></li>
-            
           </ul>
       </nav>
       <div class="operation-mode">  
@@ -40,24 +39,49 @@
           <input type="text" placeholder="Что ищем?">
       </form>
         <form class="email-form" action="https://echo.htmlacademy.ru">
-            <input type="email" name="email" placeholder="Электронная почта" required>
-            <input type="password" name="password" placeholder="Пароль" required>
-            <a class="form-support" href="#">Забыли пароль?</a>
-            <a class="form-support" href="#">Новая регистрация</a>
-            <input type="submit" value="Войти">
+            <input type="email" class="mail-pas" name="email" placeholder="Электронная почта" required>
+            <input type="password" class="mail-pas" name="password" placeholder="Пароль" required>
+            <div class="bot-orient">
+              <input type="submit" class="button" value="Войти">
+              <div class="clm-text">
+                <a class="form-support" href="#">Забыли пароль?</a>
+                <a class="form-support" href="#">Новая регистрация</a>
+              </div>
+            </div> 
         </form> 
-        <form class="feedback-form" action="https://echo.htmlacademy.ru">
-          <h1 class="feedback-form-text">Мы обязательно вам ответим!</h1>
-          <input type="text" name="login" placeholder="Как вас зовут?">
-          <input type="email" name="email" placeholder="Ваша почта для ответа">
-          <input type="text" name="feedback" placeholder="Напишите что-нибудь...">
-          <input type="submit" name="send-button" value="Отправить">
+        
+        <form class="basket-form">
+          <ul class="basket-list">
+            <li class="basket-list-element">
+              <img src="img/cross-small.svg" alt="exit">
+              <img src="img/gllacy_1_1.jpg" alt="gllacy_1_1" width="33px" height="33px" style="border-radius: 50%">
+              <span class="basket-element">Пломбир с апельсиновым джемом</span>
+              <span class="basket-weight">1,5 кг х</span>
+              <span class="basket-price">200 руб.</span>
+              <span class="basket-value">300 руб.</span>
+            </li>
+            <li class="basket-list-element">
+                <img src="img/cross-small.svg" alt="exit">
+                <img src="img/gllacy_1_3.jpg" alt="gllacy_1_3" width="33px" height="33px" style="border-radius: 50%">
+                <span class="basket-element">Клубничный пломбир с присыпкой из белого шоколада</span>
+                <span class="basket-weight">1,5 кг х</span>
+                <span class="basket-price">300 руб.</span>
+                <span class="basket-value">450 руб.</span>
+              </li>
+          </ul>  
+          <div class="underlist">
+            <div class="value-underlist">
+              <p class="final">Итого:</p>
+              <p class="final-value">750 руб.</p>
+            </div>
+            <a class="button">Оформить заказ</a>
+        </div>
         </form>
     </header>
     <main>
       <section class="huge-gllacy">
         <h3 class="visually-hidden">Картинки с разными мороженками</h3>
-        <div>
+        <div class="ice-adv">
           <h1 class="ice-pairs">Крем-брюле и пломбир с малиновым джемом</h1>
           <a href="#" class="button">Давайте оба!</a>
         </div>
@@ -110,56 +134,71 @@
           </li>
         </ul>
       </nav>
-
-    <section class="about-gllacy">
-      <h2 class="about-gllacy-head">Магазин Глэйси — это онлайн- и офлайн-магазин
-         по продаже мороженого собственного производства на развес</h2>
-      <ul class="about-gllacy-list">
+      <section class="about-gllacy">
+        <h2 class="about-gllacy-head">Магазин Глэйси — это онлайн- и офлайн-магазин
+          по продаже мороженого собственного производства на развес</h2>
+        <ul class="about-gllacy-list">
+            <li class="tech-production">
+              <img src="img/ice-cream.svg">Все наше мороженое изготавливается 
+              на собственном производстве, с использованием современного оборудования 
+              и проверенных временем <br>
+                технологий.</li>
           <li class="tech-production">
-            <img src="img/ice-cream.svg">Все наше мороженое изготавливается 
-            на собственном производстве, с использованием современного оборудования 
-            и проверенных временем <br>
-              технологий.</li>
-        <li class="tech-production">
-            <img src="img/eco.svg">Для приготовления мороженого используются 
-          настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и 
-          добавки произведены из натурального, экологически чистого сырья.</li>
-        <li class="tech-production">
-            <img src="img/cow.svg">Закупка ингредиентов  производится только у проверенных 
-          фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-        <li class="tech-production">
-            <img src="img/thermometer.svg">Доставка нашего мороженого до заказчиков 
-          осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет 
-          сохранить превосходный вкус.</li>
-      </ul>
-    </section>
-    <div class="container">
-      <article class="gllacy-blog-news">
-        <h3 class="link-font-head">Новое в нашем блоге</h3>
-        <a href="#" class="link-font">10 способов сервировки фруктовых щербетов к столу</a>
-      </article>
-      <div class="outline-mail">
-        <section class="mailing">
-          <h3 class="visually-hidden">Рассылка</h3>
-          <p class="link-font-head">Подпишитесь на нашу сладкую рассылку и будете всегда 
-            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и 
-            не слать всякой ненужной ерунды. Честно =) </p>
-            <form class="feedback-mail" action="https://echo.htmlacademy.ru">
-              <input type="email" name="email" placeholder="Электронная почта">
-              <input type="submit" name="send-button" value="Отправить">
-            </form>
-        </section>
+              <img src="img/eco.svg">Для приготовления мороженого используются 
+            настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и 
+            добавки произведены из натурального, экологически чистого сырья.</li>
+          <li class="tech-production">
+              <img src="img/cow.svg">Закупка ингредиентов  производится только у проверенных 
+            фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+          <li class="tech-production">
+              <img src="img/thermometer.svg">Доставка нашего мороженого до заказчиков 
+            осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет 
+            сохранить превосходный вкус.</li>
+        </ul>
+      </section>
+      <div class="container">
+        <article class="gllacy-blog-news">
+          <h3 class="link-font-head">Новое в нашем блоге</h3>
+          <a href="#" class="link-font">10 способов сервировки фруктовых щербетов к столу</a>
+        </article>
+        <div class="outline-mail">
+          <section class="mailing">
+            <h3 class="visually-hidden">Рассылка</h3>
+            <p class="link-font-head">Подпишитесь на нашу сладкую рассылку и будете всегда 
+              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и 
+              не слать всякой ненужной ерунды. Честно =) </p>
+              <form class="feedback-mail" action="https://echo.htmlacademy.ru">
+                <input type="email" name="email" placeholder="Электронная почта">
+                <input type="submit" name="send-button" value="Отправить">
+              </form>
+          </section>
+        </div>
       </div>
-    </div>
-   <aside>
-      <h3 class="visually-hidden"></h3>
-      <p class="small-feedback-text">Адрес главного офиса и офлайн-магазина:</p>
-      <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-      <p class="small-feedback-text">Для заказов по телефону:</p>
-      <p class="phone-nbr">8 812 450-25-25</p>
-      <p class="small-feedback-text">(с 10 до 20 ежедневно)</p>
-      <a class="button" href="form.html">Форма обратной связи</a>
-    </aside>
+      <div class="aside-end">
+        <aside class="feedback-ap">
+          <h3 class="visually-hidden">Форма обратной связи</h3>
+          <!-- <p class="feedback-address"> -->
+            <span class="small-feedback-text">Адрес главного офиса и офлайн-магазина:</span>
+            <span class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+          <!-- </p> -->
+          <!-- <p class="feedback-address"> -->
+            <span class="small-feedback-text">Для заказов по телефону:</span>
+            <span class="address">8 812 450-25-25</span>
+            <span class="small-feedback-text">(с 10 до 20 ежедневно)</span>
+          <!-- </p> -->
+          <a class="button" href="form.html">Форма обратной связи</a>
+        </aside>
+      </div>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru">
+        <div class="feedback-head">
+          <h1 class="feedback-form-head">Мы обязательно вам ответим!</h1>
+          <img src="img/cross-big.svg" alt="exit" width="20px" height="20px">
+        </div>
+        <input type="text" class="form-name" name="login" placeholder="Как вас зовут?">
+        <input type="email" class="form-name" name="email" placeholder="Ваша почта для ответа">
+        <input type="text" class="form-text" name="feedback" placeholder="Напишите что-нибудь...">
+        <input type="submit" class="button" name="send-button" value="Отправить">
+      </form>
     </main>
     <footer class="footer-main">
       <h4 class="visually-hidden">социальные сети</h4>
