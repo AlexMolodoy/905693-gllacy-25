@@ -22,6 +22,8 @@ body {
   padding: 15px 0;
 }
 
+
+
 input[class="button"]{
   width: 139px;
 }
@@ -158,7 +160,8 @@ input[class="button"]{
   border-radius: 16px;
   width: 32px;
   height: 32px;
-  
+  background-image: url(../img/loupe-black.svg);
+  background-repeat: no-repeat;
 }
 
 .search-content{
@@ -195,6 +198,32 @@ input[class="button"]{
   border-radius: 16px;
   width: 92px;
   height: 32px;
+  
+}
+
+.entry-text:hover,
+.entry-text:focus,
+.entry-text:active{
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #323232;
+  text-decoration: none;
+}
+
+.login:hover,
+.login:focus,
+.login:active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  background-image: url(../img/entrance-black.svg);
+  background-repeat: no-repeat;
+  background-color: #f8f7f4;
+  border-radius: 16px;
+  width: 92px;
+  height: 32px;
+  
 }
 
 .email-form{
@@ -243,6 +272,21 @@ input[class="button"]{
   background-image: url(../img/basket.svg);
   background-repeat: no-repeat;
   background-color: #a0b5a9;
+  border-radius: 16px; 
+  width: 100px;
+  height: 32px;
+}
+
+.basket:hover,
+.basket:focus,
+.basket:active{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  background-image: url(../img/basket-black.svg);
+  background-repeat: no-repeat;
+  background-color: #f8f7f4;
   border-radius: 16px; 
   width: 100px;
   height: 32px;
@@ -337,8 +381,8 @@ input[class="button"]{
 .ice-adv{
   width: 1146px;
   height: 590px;
- /* background-image: url(../img/ice-pair.png);
-  background-repeat: no-repeat;*/
+  background-image: url(../img/ice-pair.png);
+  background-repeat: no-repeat;
   
 }
 
@@ -375,6 +419,11 @@ input[class="button"]{
   border-radius: 10px;
   height: 230px;
   width: 560px;
+}
+
+.hit{
+  background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
 }
 
 .about-gllacy{
