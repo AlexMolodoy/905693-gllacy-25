@@ -28,12 +28,15 @@ input[class="button"]{
   width: 139px;
 }
 
-.visually-hidden{
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  margin: 0 0;
-  padding: 0 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header styles */
@@ -148,6 +151,7 @@ input[class="button"]{
   height: 32px;
   background-image: url(../img/loupe.svg);
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -184,7 +188,6 @@ input[class="button"]{
   font-size: 14px;
   font-family: "Roboto", Arial, sans-serif;
   color: #ffffff;
-  text-decoration: none;
 }
 
 .login{
@@ -198,21 +201,15 @@ input[class="button"]{
   border-radius: 16px;
   width: 92px;
   height: 32px;
-  
-}
-
-.entry-text:hover,
-.entry-text:focus,
-.entry-text:active{
-  font-size: 14px;
-  font-family: "Roboto", Arial, sans-serif;
-  color: #323232;
+  background-position: 17px 6px;
   text-decoration: none;
+
 }
 
-.login:hover,
-.login:focus,
-.login:active{
+.login:hover .entry-text,
+.login:focus .entry-text,
+.login:active .entry-text{
+  background-position: 17px 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,7 +220,11 @@ input[class="button"]{
   border-radius: 16px;
   width: 92px;
   height: 32px;
-  
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #323232;
+  text-decoration: none;
+  text-emphasis-position: 
 }
 
 .email-form{
@@ -275,11 +276,13 @@ input[class="button"]{
   border-radius: 16px; 
   width: 100px;
   height: 32px;
+  text-decoration: none;
+  background-position: 17px 6px;
 }
 
-.basket:hover,
-.basket:focus,
-.basket:active{
+.basket:hover .entry-text,
+.basket:focus .entry-text,
+.basket:active .entry-text{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,6 +293,11 @@ input[class="button"]{
   border-radius: 16px; 
   width: 100px;
   height: 32px;
+  font-size: 14px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #323232;
+  text-decoration: none;
+  background-position: 17px 6px;
 }
 
 .basket-form{
@@ -487,6 +495,23 @@ input[class="button"]{
   border-radius: 10px;
   width: 560px;
   height: 220px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.link-font-head{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #323232;
+}
+
+.link-font{
+  width: 282px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 24px;
+  color: #323232;
+  font-weight: bold;
 }
 
 .outline-mail{
@@ -499,17 +524,32 @@ input[class="button"]{
 }
 
 .mailing{
-  width: 550px;
-  min-height: 210px;
+  width: 510px;
+  height: 180px;
   background-color: #f8f7f4;
   border-radius: 10px;
   margin: 0 auto;
-  padding: 0 0;
+  padding: 15px 20px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #5a5a5a;
 }
 
-.link-font-head{}
+.feedback-mail{
+  display: flex;
+  justify-content: space-between;
+}
 
-.feedback-mail{}
+.mail-size{
+  width: 128px;
+  height: 45px;
+}
+
+.mail-form{
+  width: 368px;
+  height: 45px;
+  border-radius: 10px;
+}
 
 .aside-end{
   display: flex;
@@ -632,8 +672,9 @@ input[class="button"]{
 .gllacy-element{
   width: 266px;
   margin-bottom: 45px;
+  position: relative;
 }
-
+/*
 .gllacy-element:hover,
 .gllacy-element:focus{
   background-color: #9bafa3;
@@ -644,6 +685,19 @@ input[class="button"]{
   padding-right: 12px;
   padding-top: 7px;
   padding-bottom: 23px;
+}*/
+
+.gllacy-element:hover::before,
+.gllacy-element:focus::before {
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  background: rgba(255,255,255,.5);
+  z-index: -1;
+  border-radius: 10px;
 }
 
 .radius{
