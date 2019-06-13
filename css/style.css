@@ -433,6 +433,7 @@ input[class="button"]{
 .hit{
   background-image: url(../img/hit.svg);
   background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .about-gllacy{
@@ -443,8 +444,6 @@ input[class="button"]{
   margin-right: 0;
   width: 1146px;
   height: 306px;
-  /* padding: 30px 20px; */
-
 }
 
 .about-gllacy-head{
@@ -680,32 +679,45 @@ input[class="button"]{
   width: 266px;
   margin-bottom: 45px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/*
-.gllacy-element:hover,
-.gllacy-element:focus{
-  background-color: #9bafa3;
-  height: 406px;
-  width: 290px;
-  border-radius: 10px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 7px;
-  padding-bottom: 23px;
-}*/
+
+.ice-icon{
+  width: 267px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gllacy-element:hover .hover-box,
+.gllacy-element:focus .hover-box{
+  z-index: 1;
+  display: block;
+}
 
 .gllacy-element:hover::before,
-.gllacy-element:focus::before {
+.gllacy-element:focus::before{
   content: "";
   position: absolute;
   left: -5%;
   top: -5%;
   width: 110%;
-  height: 110%;
+  height: 125%;
   background: rgba(255,255,255,.5);
-  z-index: -1;
   border-radius: 10px;
+  z-index: -1;
 }
+
+.hover-box{
+  margin-left: 0;
+  margin-top: 15px;
+  position: absolute;
+  bottom: -60px;
+  display: none;
+}
+
 
 .radius{
   border-radius: 50%;
@@ -730,6 +742,7 @@ input[class="button"]{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #ffffff;
+  width: 245px;
 }
 
 
