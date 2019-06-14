@@ -775,7 +775,10 @@ input[class="button"]{
   padding: 0 0;
 }
 
-.social-button{}
+.social-button{
+  border-width: 3px;
+  border-color: #c2cec7;
+}
 
 .social-size{
   display: flex;
