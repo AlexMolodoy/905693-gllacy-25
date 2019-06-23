@@ -46,6 +46,8 @@ input[class="button"]{
   color: #ffffff;
   width: 1146px;
   height: 75px;
+  position: relative;
+  z-index: 1;
 }
 
 .navigation-main{
@@ -58,6 +60,7 @@ input[class="button"]{
 
 .navigation-site{
   padding: 0 0;
+  margin-top: 10px;
   width: 853px;
   font-size: 16px;
   font-weight: bold;
@@ -381,9 +384,10 @@ input[class="button"]{
   width: 1146px;
   margin-left: 0;
   margin-right: 0;
-  height: 590px;
+  height: 630px;
   display: flex;
   align-content: center;
+  margin-top: -100px;
 
 }
 
@@ -396,16 +400,32 @@ input[class="button"]{
   font-size: 60px;
   font-weight: bold;
   color: #ffffff;
-  margin-top: -100px;
+  display: flex;
+  align-content: center;
+  padding: 0 50px;
 }
 
 
 .ice-pairs{
-  /*font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 60px;
   color: #ffffff;
   font-weight: bold;
-  width: 690px; */
+  width: 690px; 
+}
+
+.ice-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 300px;
+  top: 300px;
+}
+
+.ice-text .button{
+  width: 280px;
+  height: 33px;
 }
 
 .stock{
@@ -421,11 +441,50 @@ input[class="button"]{
   margin-right: 0;
 }
 
+.stock-h{
+  padding: 0 0;
+  margin: 0 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.stock-text{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
 .stock-raspberries{
   background-image: url(../img/raspberry.jpg);
   border-radius: 10px;
   height: 230px;
   width: 560px;
+  
+}
+
+.stock-container{
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  width: 560px;
+  padding: 22px 20px;
+}
+
+.container-text{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 516px;
+}
+
+.stock-container .button{
+  width: 165px;
+  position: absolute;
+  right: 700px;
+  bottom: 0px;
 }
 
 .stock-chocolate{
@@ -440,8 +499,22 @@ input[class="button"]{
   background-repeat: no-repeat;
   content: "";
   position: absolute;
-  z-index: 3;
 }
+
+.hit::after{
+  background-image: url(../img/hit.svg);
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  z-index: 3;
+  width: 62px;
+  height: 62px;
+  background-size: 100%;
+  left: 0;
+  top: 0;
+}
+
+
 
 .about-gllacy{
   border-radius: 10px;
@@ -500,7 +573,8 @@ input[class="button"]{
   background-image: url(../img/strawberry.jpg);
   background-repeat: no-repeat;
   border-radius: 10px;
-  width: 560px;
+  padding-left: 20px;
+  width: 540px;
   height: 220px;
   display: flex;
   flex-direction: column;
@@ -511,8 +585,7 @@ input[class="button"]{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #323232;
-  padding-top: 28px;
-  padding-left: 20px;
+  padding-top: 34px;
   margin: 0;
 }
 
@@ -523,7 +596,6 @@ input[class="button"]{
   color: #323232;
   font-weight: bold;
   padding-top: 20px;
-  padding-left: 20px;
 }
 
 .outline-mail{
@@ -536,18 +608,32 @@ input[class="button"]{
 }
 
 .mailing{
-  width: 510px;
-  height: 180px;
+  width: 550px;
+  height: 210px;
   background-color: #f8f7f4;
   border-radius: 10px;
   margin: 0 auto;
-  padding: 15px 20px;
+  padding: 0 0;
+  
+}
+
+.mailing-font-head{
+  margin: 0;
+}
+
+.mail-text{
+  padding: 34px 21px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #5a5a5a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
 }
 
 .feedback-mail{
+
   display: flex;
   justify-content: space-between;
 }
@@ -734,6 +820,10 @@ input[class="button"]{
 
 .radius{
   border-radius: 50%;
+}
+
+.value-text{
+  display: flex;
 }
 
 .price{

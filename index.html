@@ -83,28 +83,29 @@
       <section class="huge-gllacy">
         <h3 class="visually-hidden">Картинки с разными мороженками</h3>
         <div class="ice-adv">
-          <img src="img/ice-pair.png" class="ice-img" height="881" width="1045" alt="Крем-брюле и пломбир с малиновым джемом">
-          <!-- <h1 class="ice-pairs">Крем-брюле и пломбир с малиновым джемом</h1> -->
-          <!-- <a href="#" class="button">Давайте оба!</a> -->
+          <img src="img/ice-pair.png" height="881" width="1045" alt="Крем-брюле и пломбир с малиновым джемом">
+          <div class="ice-text">
+            <h1 class="ice-pairs">Крем-брюле и пломбир с малиновым джемом</h1>
+            <a href="#" class="button">Давайте оба!</a>
+          </div>
         </div>
       </section>
       <ul class="stock">
         <li class="stock-raspberries">
-          <section>
-            <h2>Малинка даром!</h2>
-            <p>При покупке 2 кг любого фруктового мороженого, 
-              добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <div class="stock-container">
+            <div class="container-text">
+              <h2 class="stock-h">Малинка даром!</h2>
+              <p class="stock-text">При покупке 2 кг любого фруктового мороженого, 
+                добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            </div>
             <a href="#" class="button">Хочу варенье!</a>
-            </section>
+          </div>
         </li>
-        <li class="stock-chocolate"> 
-            <section>       
-              <h2>Шоколадки даром!</h2>
-             <p>При покупке 2 кг пломбира, добавим в ваш заказ 
-               упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-             </p>
-              <a href="#" class="button">Хочу шоколадки!</a>
-            </section> 
+        <li class="stock-chocolate">   
+           <h2 class="stock-h">Шоколадки даром!</h2>
+           <p class="stock-text">При покупке 2 кг пломбира, добавим в ваш заказ 
+               упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+           <a href="#" class="button">Хочу шоколадки!</a>
         </li>
       </ul> 
 
@@ -113,35 +114,43 @@
               <li class="gllacy-element hit">
                 <div class="ice-icon">
                   <a href="#"><img class="radius" src="img/gllacy_1_1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" height="267" width="267"></a>
+                  <div class="value-text">
                   <span class="price">310 ₽</span>
                   <span class="weight">/кг</span>
+                </div>
                 </div>
                 <a href="#" class="about-icecream">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <a href="#" class="button hover-box">Быcтрый просмотр</a>
               </li>
-              <li class="gllacy-element">
+              <li class="gllacy-element hit">
                 <div class="ice-icon">
                   <a href="#"><img class="radius" src="img/gllacy_1_2.jpg" alt="Сливочно-кофейное с кусочками шоколада" height="267" width="267"></a>
+                  <div class="value-text">
                   <span class="price">380 ₽</span>
                   <span class="weight">/кг</span>
+                  </div>
                 </div>
                 <a href="#" class="about-icecream">Сливочно-кофейное с кусочками шоколада</a>
                 <a href="#" class="button hover-box">Быcтрый просмотр</a>
               </li>
-              <li class="gllacy-element">
+              <li class="gllacy-element hit">
                 <div class="ice-icon">
                   <a href="#"><img class="radius" src="img/gllacy_1_3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" height="267" width="267"></a>
-                  <span class="price">355 ₽</span>
-                  <span class="weight">/кг</span>
+                  <div class="value-text">
+                    <span class="price">355 ₽</span>
+                   <span class="weight">/кг</span>
+                  </div>
                 </div>
                 <a href="#" class="about-icecream">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <a href="#" class="button hover-box">Быcтрый просмотр</a>
               </li>
-              <li class="gllacy-element">
+              <li class="gllacy-element hit">
                 <div class="ice-icon">
                   <a href="#"><img class="radius" src="img/gllacy_1_4.jpg" alt="Сливочное крем-брюле с карамельной подливкой" height="267" width="267"></a>
+                  <div class="value-text">
                   <span class="price">415 ₽</span>
                   <span class="weight">/кг</span>
+                </div>
                 </div>  
                 <a href="#" class="about-icecream">Сливочное крем-брюле с карамельной подливкой</a>
                 <a href="#" class="button hover-box">Быcтрый просмотр</a>
@@ -176,14 +185,16 @@
         </article>
         <div class="outline-mail">
           <section class="mailing">
-            <h3 class="visually-hidden">Рассылка</h3>
-            <p class="link-font-head">Подпишитесь на нашу сладкую рассылку и будете всегда 
-              в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и 
-              не слать всякой ненужной ерунды. Честно =) </p>
-              <form class="feedback-mail" action="https://echo.htmlacademy.ru">
-                <input type="email" class="mail-form" name="email" placeholder="Электронная почта">
-                <input type="submit" class="button mail-size" name="send-button" value="Отправить">
-              </form>
+            <div class="mail-text">
+              <h3 class="visually-hidden">Рассылка</h3>
+              <p class="mailing-font-head">Подпишитесь на нашу сладкую рассылку и будете всегда 
+                в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и 
+                не слать всякой ненужной ерунды. Честно =) </p>
+                <form class="feedback-mail" action="https://echo.htmlacademy.ru">
+                  <input type="email" class="mail-form" name="email" placeholder="Электронная почта">
+                  <input type="submit" class="button mail-size" name="send-button" value="Отправить">
+                </form>
+            </div>
           </section>
         </div>
       </div>
