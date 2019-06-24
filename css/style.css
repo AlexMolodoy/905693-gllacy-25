@@ -753,6 +753,93 @@ input[class="button"]{
   color: #ffffff;
 }
 
+.filter{
+  display: flex;
+  width: 1146px;
+  flex-wrap: wrap;
+}
+
+.sorting{
+  display: flex;
+  flex-direction: column;
+}
+
+.selection{
+  background-color: #849d8f;
+  border-radius: 20px;
+}
+
+.name-scale{
+  display: flex;
+  flex-direction: column;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 100px;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.fatness{
+  display: flex;
+  flex-direction: column;
+}
+
+.fat-content{
+  list-style: none;
+  display: flex;
+}
+
+.stuff{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.fillers{
+  list-style: none; 
+  display: flex;
+}
+
 .navigation-gllacy{
   margin-left: 0;
   margin-right: 0;
@@ -848,7 +935,16 @@ input[class="button"]{
   width: 245px;
 }
 
+.sheet-list{
+  list-style: none;
+  display: flex;
+}
 
+.list-element{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+}
 
 /* footer styles */
 

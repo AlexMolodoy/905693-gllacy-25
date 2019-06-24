@@ -98,6 +98,45 @@
         <h1 class="gllacy-category">Сливочное мороженое</h1>
       </nav>
 
+      <form class="filter">
+        <div class="sorting">
+          <span class="name-sorting">Сортировка</span>
+          <select name="sorting">
+              <option value="popularity" class="selection">по популярности</option>
+          </select>
+        </div>
+        <div class="name-scale">
+          <span class="scale-price">Цена: 100 руб. - 500 руб.</span>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+        </div>
+        <div class="fatness">
+          <span class="fat-name">Жирность:</span>
+          <ul class="fat-content">
+            <li><input type="radio" name="1" value="1">0%</li>
+            <li><input type="radio" name="1" value="2">до 10%</li>
+            <li><input type="radio" name="1" value="3">до 30%</li>
+            <li><input type="radio" name="1" value="4">выше 30%</li>
+          </ul>
+        </div>
+        <div class="stuff">
+          <span class="stuff-name">Наполнители:</span>
+          <ul class="fillers">
+            <li class=""><input type="checkbox">шоколадные</li>
+            <li><input type="checkbox">сахарные присыпки</li>
+            <li><input type="checkbox">фрукты</li>
+            <li><input type="checkbox">сиропы</li>
+            <li><input type="checkbox">джемы</li>
+          </ul>
+        </div>  
+        <input type="submit" value="применить" class="send">
+      </form>
+
       <nav class="navigation-gllacy">
         <ul class="gllacy-list">
           <li class="gllacy-element">
@@ -234,6 +273,16 @@
           </li>
         </ul>
       </nav>
+
+      <ul class="sheet-list">
+        <li><a class="list-element" href="#"></a></li>
+        <li><a class="list-element" href="#">1</a></li>
+        <li><a class="list-element" href="#">2</a></li>
+        <li><a class="list-element" href="#">3</a></li>
+        <li><a class="list-element" href="#">4</a></li>
+        <li><a class="list-element" href="#">5</a></li>
+        <li><a class="list-element" href="#"></a></li>
+      </ul>
     </main>
     <footer class="footer-main">
         <h4 class="visually-hidden">социальные сети</h4>
