@@ -440,7 +440,8 @@ input[class="button"]{
 
 .stock-h{
   padding: 0 0;
-  margin: 0 0;
+  margin-bottom: 20px;
+  margin-top: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 35px;
   font-weight: bold;
@@ -452,44 +453,43 @@ input[class="button"]{
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
+  margin-bottom: 45px;
+  margin-top: 0;
 }
 
 .stock-raspberries{
   background-image: url(../img/raspberry.jpg);
+  background-color: #d21c4d;
   border-radius: 10px;
-  height: 230px;
-  width: 560px;
-  
-}
-
-.stock-container{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
   height: 186px;
   width: 520px;
   padding: 18px 20px;
-}
-
-.container-text{
-  display: flex;
   flex-direction: column;
-  height: 100px;
-  width: 516px;
-  margin-bottom: 45px;
 }
 
-.stock-container .button{
+.stock-raspberries .button{
   width: 165px;
-}
-
+  height: 15px;
+  display: block;
+  margin-left: auto;
+} 
 
 .stock-chocolate{
   background-image: url(../img/chocolate.jpg);
+  background-color: #816055;
   border-radius: 10px;
-  height: 230px;
-  width: 560px;
+  height: 186px;
+  width: 520px;
+  padding: 18px 20px;
+  flex-direction: column;
 }
+
+.stock-chocolate .button{
+  width: 165px;
+  height: 15px;
+  display: block;
+  margin-left: auto;
+} 
 
 .hit{
   background-image: url(../img/hit.svg);
@@ -545,13 +545,14 @@ input[class="button"]{
   margin: 0;
   list-style: none;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .tech-production{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #323232;
-  width: 490px;
+  width: 485px;
   padding-left: 50px;
   position: relative;
   padding-top: 30px;
@@ -560,6 +561,7 @@ input[class="button"]{
 .tech-img{
   position: absolute;
   left: 0;
+  top: 10px;
 }
 
 
@@ -773,6 +775,10 @@ input[class="button"]{
   padding: 10px 16px; 
 }
 
+.name-scale .name{
+  margin-bottom: 18px;
+}
+
 .sorting{
   display: flex;
   flex-direction: column;
@@ -803,6 +809,8 @@ input[class="button"]{
   position: relative;
   background-color: #a9bab0;
   margin-bottom: 32px;
+  width: 218px;
+  height: 36px;
 }
 
 .range-controls .scale {
