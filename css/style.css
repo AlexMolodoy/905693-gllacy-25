@@ -773,11 +773,12 @@ input[class="button"]{
   font-size: 16px;
   color: #ffffff;
   padding: 10px 16px; 
+  margin-bottom: 0;
 }
 
-.name-scale .name{
+/* .name-scale .name{
   margin-bottom: 18px;
-}
+} */
 
 .sorting{
   display: flex;
@@ -787,15 +788,22 @@ input[class="button"]{
 }
 
 .selection{
+  background-color: #a9bab0;
+ 
+}
+
+.sort-selection{
   background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
   background-color: #a9bab0;
   background-position: 168px 17px;
-  border-radius: 30px;
+  border-radius: 50px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   color: #ffffff;
   padding: 14px 16px; 
+  width: 193px;
+  height: 36px;
 }
 
 .name-scale{
@@ -814,6 +822,8 @@ input[class="button"]{
 }
 
 .range-controls .scale {
+  position: absolute;
+  top: 18px;
   height: 2px;
 
   background: rgba(255, 255, 255, 0.3);
@@ -828,7 +838,7 @@ input[class="button"]{
 
 .range-toggle {
   position: absolute;
-  top: -9px;
+  top: 9px;
   
   width: 4px;
   height: 4px;
@@ -836,7 +846,6 @@ input[class="button"]{
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
@@ -866,52 +875,62 @@ input[class="button"]{
   width: 385px;
   height: 36px;
   border-radius: 30px;
+  align-items: center;
 }
 
 .fat{
+  position: relative;
+  padding-left: 33px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #ffffff;
   margin-right: 18px;
-  /* background-image: url(../img/radio-off.svg);
-  background-repeat: no-repeat; */
 }
 
 .fat::before{
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  content: "";
   background-image: url(../img/radio-off.svg);
   background-repeat: no-repeat;
   position: absolute;
 }
 
-input:checked + .fat::before{
+.fat-input:checked + .fat::before{
   background-image: url(../img/radio-on.svg);
   background-repeat: no-repeat;
-}
-
-.empty{
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-  background-image: url(../img/radio-off.svg);
-  background-repeat: no-repeat;
-  background-position: 168px 17px; 
-}
-
-.full{
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  color: #ffffff;
-  background-image: url(../img/radio-on.svg);
-  background-repeat: no-repeat;
-  /* background-position: 168px 17px; */
-
 }
 
 .stuff{
   display: flex;
   flex-direction: column;
-  
+}
 
+.stuff-list{
+  position: relative;
+  padding-left: 33px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 18px;
+}
+
+.stuff-list::before{
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  content: "";
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.stuff-input:checked + .stuff-list::before{
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat; 
 }
 
 .fillers{
@@ -925,6 +944,7 @@ input:checked + .fat::before{
   height: 36px;
   border-radius: 30px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-gllacy{
@@ -961,7 +981,7 @@ input:checked + .fat::before{
 
 .gllacy-element:hover,
 .gllacy-element:focus{
-  z-index: 1;   
+  z-index: 2;   
 }
 
 .gllacy-element:hover .hover-box,
@@ -1032,13 +1052,9 @@ input:checked + .fat::before{
   border-bottom: 2px solid #a9bbb1;
 }
 
-.list-element-left{
-  background-image: url(../img/icon-right-small.svg);
-  background-repeat: no-repeat;
-  opacity: 20%;
-  margin-right: 21px;
-  text-decoration: none;
-  color: transparent;
+.list-arrow-left{
+  opacity: 0.2;
+  transform: scale(-1,1)
 }
 
 .list-element{
@@ -1048,14 +1064,18 @@ input:checked + .fat::before{
   font-weight: medium;
   margin-right: 21px;
   text-decoration: none;
+  width: 20px;
+  height: 20px;
 }
 
-.list-element-right{
+.list-arrow{
   background-image: url(../img/icon-right-small.svg);
   background-repeat: no-repeat;
+  display: block;
   margin-right: 21px;
   text-decoration: none;
-  color: transparent;
+  width: 20px;
+  height: 20px;
 }
 
 /* footer styles */

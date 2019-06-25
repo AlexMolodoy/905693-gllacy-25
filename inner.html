@@ -101,8 +101,9 @@
       <ul class="filter">
         <li class="sorting">
           <span class="name">Сортировка</span>
-          <select>
-            <option class="selection">по популярности</option>
+          <select class="sort-selection" >
+            <option id="selection">по популярности</option>
+            <option id="selection">по популярности</option>
           </select>
         </li>
         <li class="name-scale">
@@ -119,18 +120,18 @@
           <span class="name">Жирность:</span>
           <ul class="fat-content">
             <li>
-              <input type="radio" class="visually-hidden" id="fat0" name="fat" value="1" checked>
+              <input type="radio" class="visually-hidden fat-input" id="fat0" name="fat" value="1" checked>
               <label for="fat0" class="fat">0%</label>
             </li>
             <li>
-              <input type="radio" class="visually-hidden" id="fat1" name="fat" value="2">
+              <input type="radio" class="visually-hidden fat-input" id="fat1" name="fat" value="2">
               <label for="fat1" class="fat">до 10%</label></li>
             <li>
-              <input type="radio" class="visually-hidden" id="fat2" name="fat" value="3">
+              <input type="radio" class="visually-hidden fat-input" id="fat2" name="fat" value="3">
               <label for="fat2" class="fat">до 30%</label>
             </li>
             <li>
-              <input type="radio" class="visually-hidden" id="fat3" name="fat" value="4">
+              <input type="radio" class="visually-hidden fat-input" id="fat3" name="fat" value="4">
               <label for="fat3" class="fat">выше 30%</label>
             </li>
           </ul>
@@ -140,16 +141,16 @@
         <li class="stuff">
           <span class="name">Наполнители:</span>
           <ul class="fillers">
-            <li><input type="checkbox" id="chock" class="visually-hidden">
-              <label for="chock" class="">шоколадные</label></li>
-            <li><input type="checkbox" id="sugar" class="visually-hidden">
-              <label for="sugar" class="">сахарные присыпки</label></li>
-            <li><input type="checkbox" id="fruit" class="visually-hidden">
-              <label for="fruit" class="">фрукты</label></li>
-            <li><input type="checkbox" id="syrup" class="visually-hidden">
-              <label for="syrup" class="">сиропы</label></li>
-            <li><input type="checkbox" id="jam" class="visually-hidden">
-              <label for="jam" class="">джемы</label></li>
+            <li><input type="checkbox" id="chock" class="visually-hidden stuff-input" checked>
+              <label for="chock" class="stuff-list">шоколадные</label></li>
+            <li><input type="checkbox" id="sugar" class="visually-hidden stuff-input">
+              <label for="sugar" class="stuff-list">сахарные присыпки</label></li>
+            <li><input type="checkbox" id="fruit" class="visually-hidden stuff-input">
+              <label for="fruit" class="stuff-list">фрукты</label></li>
+            <li><input type="checkbox" id="syrup" class="visually-hidden stuff-input">
+              <label for="syrup" class="stuff-list">сиропы</label></li>
+            <li><input type="checkbox" id="jam" class="visually-hidden stuff-input">
+              <label for="jam" class="stuff-list">джемы</label></li>
           </ul>
         </li>  
         <li><input type="submit" value="применить" class="send"></li>
@@ -293,13 +294,13 @@
       </nav>
 
       <ul class="sheet-list">
-        <li><a class="list-element-left" href="#">previous page</a></li>
+        <li><a class="list-arrow list-arrow-left" href="#"><span class="visually-hidden">previous page<span></a></li>
         <li><a class="list-element" href="#">1</a></li>
         <li><a class="list-element" href="#">2</a></li>
         <li><a class="list-element" href="#">3</a></li>
         <li><a class="list-element" href="#">4</a></li>
         <li><a class="list-element" href="#">5</a></li>
-        <li><a class="list-element-right" href="#">next page</a></li>
+        <li><a class="list-arrow" href="#"><span class="visually-hidden">next page</span></a></li>
       </ul>
     </main>
     <footer class="footer-main">
