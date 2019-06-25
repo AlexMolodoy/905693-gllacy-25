@@ -101,7 +101,9 @@
       <ul class="filter">
         <li class="sorting">
           <span class="name">Сортировка</span>
-          <span class="selection">по популярности</span>
+          <select>
+            <option class="selection">по популярности</option>
+          </select>
         </li>
         <li class="name-scale">
           <span class="name">Цена: 100 руб. - 500 руб.</span>
@@ -116,20 +118,38 @@
         <li class="fatness">
           <span class="name">Жирность:</span>
           <ul class="fat-content">
-            <li><input type="radio" name="1" value="1">0%</li>
-            <li><input type="radio" name="1" value="2">до 10%</li>
-            <li><input type="radio" name="1" value="3">до 30%</li>
-            <li><input type="radio" name="1" value="4">выше 30%</li>
+            <li>
+              <input type="radio" class="visually-hidden" id="fat0" name="fat" value="1" checked>
+              <label for="fat0" class="fat">0%</label>
+            </li>
+            <li>
+              <input type="radio" class="visually-hidden" id="fat1" name="fat" value="2">
+              <label for="fat1" class="fat">до 10%</label></li>
+            <li>
+              <input type="radio" class="visually-hidden" id="fat2" name="fat" value="3">
+              <label for="fat2" class="fat">до 30%</label>
+            </li>
+            <li>
+              <input type="radio" class="visually-hidden" id="fat3" name="fat" value="4">
+              <label for="fat3" class="fat">выше 30%</label>
+            </li>
           </ul>
+         
+
         </li>
         <li class="stuff">
           <span class="name">Наполнители:</span>
           <ul class="fillers">
-            <li class=""><input type="checkbox">шоколадные</li>
-            <li><input type="checkbox">сахарные присыпки</li>
-            <li><input type="checkbox">фрукты</li>
-            <li><input type="checkbox">сиропы</li>
-            <li><input type="checkbox">джемы</li>
+            <li><input type="checkbox" id="chock" class="visually-hidden">
+              <label for="chock" class="">шоколадные</label></li>
+            <li><input type="checkbox" id="sugar" class="visually-hidden">
+              <label for="sugar" class="">сахарные присыпки</label></li>
+            <li><input type="checkbox" id="fruit" class="visually-hidden">
+              <label for="fruit" class="">фрукты</label></li>
+            <li><input type="checkbox" id="syrup" class="visually-hidden">
+              <label for="syrup" class="">сиропы</label></li>
+            <li><input type="checkbox" id="jam" class="visually-hidden">
+              <label for="jam" class="">джемы</label></li>
           </ul>
         </li>  
         <li><input type="submit" value="применить" class="send"></li>

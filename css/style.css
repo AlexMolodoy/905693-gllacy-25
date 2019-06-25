@@ -418,9 +418,6 @@ input[class="button"]{
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  left: 300px;
-  top: 300px;
 }
 
 .ice-text .button{
@@ -468,9 +465,10 @@ input[class="button"]{
 .stock-container{
   display: flex;
   flex-direction: column;
-  height: 230px;
-  width: 560px;
-  padding: 22px 20px;
+  align-items: flex-end;
+  height: 186px;
+  width: 520px;
+  padding: 18px 20px;
 }
 
 .container-text{
@@ -478,14 +476,13 @@ input[class="button"]{
   flex-direction: column;
   height: 100px;
   width: 516px;
+  margin-bottom: 45px;
 }
 
 .stock-container .button{
   width: 165px;
-  position: absolute;
-  right: 700px;
-  bottom: 0px;
 }
+
 
 .stock-chocolate{
   background-image: url(../img/chocolate.jpg);
@@ -548,14 +545,24 @@ input[class="button"]{
   margin: 0;
   list-style: none;
   flex-wrap: wrap;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
-  color: #323232;
 }
 
 .tech-production{
-  width: 50%;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #323232;
+  width: 490px;
+  padding-left: 50px;
+  position: relative;
+  padding-top: 30px;
 }
+
+.tech-img{
+  position: absolute;
+  left: 0;
+}
+
+
 
 .container{
   display: flex;
@@ -844,21 +851,72 @@ input[class="button"]{
 
 .fat-content{
   list-style: none;
+  padding: 0 15px;
   display: flex;
+  justify-content: space-between;
   background-color: #a9bab0;
-  width: 415px;
+  width: 385px;
   height: 36px;
+  border-radius: 30px;
+}
+
+.fat{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 18px;
+  /* background-image: url(../img/radio-off.svg);
+  background-repeat: no-repeat; */
+}
+
+.fat::before{
+  background-image: url(../img/radio-off.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+input:checked + .fat::before{
+  background-image: url(../img/radio-on.svg);
+  background-repeat: no-repeat;
+}
+
+.empty{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-image: url(../img/radio-off.svg);
+  background-repeat: no-repeat;
+  background-position: 168px 17px; 
+}
+
+.full{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-image: url(../img/radio-on.svg);
+  background-repeat: no-repeat;
+  /* background-position: 168px 17px; */
+
 }
 
 .stuff{
   display: flex;
   flex-direction: column;
+  
 
 }
 
 .fillers{
   list-style: none; 
   display: flex;
+  list-style: none;
+  padding: 0 16px;
+  display: flex;
+  background-color: #a9bab0;
+  width: 670px;
+  height: 36px;
+  border-radius: 30px;
+  justify-content: space-between;
 }
 
 .navigation-gllacy{
