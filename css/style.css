@@ -570,8 +570,13 @@ input[class="button"]{
 .stock-raspberries .button{
   width: 165px;
   height: 15px;
-  display: block;
+  display: flex;
   margin-left: auto;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 15px 0;
 } 
 
 .stock-chocolate{
@@ -587,8 +592,13 @@ input[class="button"]{
 .stock-chocolate .button{
   width: 165px;
   height: 15px;
-  display: block;
+  display: flex;
   margin-left: auto;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 15px 0;
 } 
 
 .hit{
@@ -750,6 +760,10 @@ input[class="button"]{
 .mail-size{
   width: 128px;
   height: 45px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .mail-form{
@@ -777,6 +791,14 @@ input[class="button"]{
   width: 303px;
   background-color: #fefefe;
   border-radius: 10px;
+  justify-content: space-between;
+}
+
+.feedback-ap .button{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .small-feedback-text{
@@ -867,6 +889,8 @@ input[class="button"]{
   width: 1146px;
   flex-wrap: wrap;
   list-style: none;
+  padding: 0 0;
+
 }
 
 .name{
@@ -1008,6 +1032,7 @@ input[class="button"]{
 .stuff{
   display: flex;
   flex-direction: column;
+  margin-right: 16px;
 }
 
 .stuff-list{
@@ -1060,6 +1085,7 @@ input[class="button"]{
   color: #ffffff;
   background-color: #a9bab0;
   border: 2px #fcfcfc solid;
+  margin-top: 38px;
   /* position: absolute;
   top: 50%;
   transform: translateY(-50%); */
@@ -1127,6 +1153,11 @@ input[class="button"]{
   position: absolute;
   bottom: -60px;
   display: none;
+  
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 
