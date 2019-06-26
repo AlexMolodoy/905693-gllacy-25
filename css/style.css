@@ -866,6 +866,7 @@ input[class="button"]{
   display: flex;
   width: 1146px;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .name{
@@ -876,9 +877,6 @@ input[class="button"]{
   margin-bottom: 0;
 }
 
-/* .name-scale .name{
-  margin-bottom: 18px;
-} */
 
 .sorting{
   display: flex;
@@ -926,22 +924,22 @@ input[class="button"]{
 .range-controls .scale {
   position: absolute;
   top: 18px;
+  left: 21px;
   height: 2px;
-
+  width: 176px;
   background: rgba(255, 255, 255, 0.6);
 }
 
 .range-controls .bar {
-  width: 100px;
+  width: 98px;
   height: 2px;
-
+  margin-left: 22px;
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: 9px;
-  
   width: 4px;
   height: 4px;
 
@@ -956,11 +954,11 @@ input[class="button"]{
 }
 
 .range-toggle-min {
-  left: 10%;
+  left: 34px;
 }
 
 .range-toggle-max {
-  left: 50%;
+  left: 132px;
 }
 
 .fatness{
@@ -1040,7 +1038,7 @@ input[class="button"]{
 }
 
 .fillers{
-  list-style: none; 
+   
   display: flex;
   list-style: none;
   padding: 0 16px;
@@ -1051,6 +1049,20 @@ input[class="button"]{
   border-radius: 30px;
   justify-content: space-between;
   align-items: center;
+}
+
+.send{
+  width: 144px;
+  height: 36px;
+  border-radius: 30px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #a9bab0;
+  border: 2px #fcfcfc solid;
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%); */
 }
 
 .navigation-gllacy{
