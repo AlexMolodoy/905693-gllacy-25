@@ -9,21 +9,11 @@ body {
   align-items: center;
 }
 
-/* .button{
-  height: 20px;
-  border-radius: 20px;
-  background-color: #f06240;
-  text-align: center;
-  color: #fefefe;
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 15px 0;
-} */
 
 .button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 12px 44px;
 
   font-weight: 600;
@@ -449,6 +439,12 @@ input[class="button"]{
   list-style: none;
 }
 
+.slider-item .button{
+  width: 196px;
+  padding: 17px 42px;
+  margin: auto;
+}
+
 .slide {
   display: none;
 }
@@ -757,14 +753,16 @@ input[class="button"]{
   justify-content: space-between;
 }
 
-.mail-size{
-  width: 128px;
-  height: 45px;
+.feedback-mail .button{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
+  padding: 0;
+  width: 128px;
+
 }
+
 
 .mail-form{
   width: 368px;
