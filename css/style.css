@@ -147,7 +147,7 @@ input[class="button"]{
 
 .navigation-user{
   padding: 0 0;
-  width: 245px;
+  min-width: 245px;
   height: 32px;
   display: flex;
   justify-content: space-between;
@@ -156,7 +156,9 @@ input[class="button"]{
 }
 
 .search{
+  margin-right: 10px;
   display: flex;
+  flex-direction: column;
   padding: 0px 0px;
   background-color: #a0b5a9;
   border-radius: 16px;
@@ -165,6 +167,7 @@ input[class="button"]{
   background-image: url(../img/loupe.svg);
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
 }
 
 
@@ -203,13 +206,13 @@ input[class="button"]{
   height: 85px;
   width: 342px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 37px;
+  left: -309px;
 }
 
 .search-form input{
-  width: 320px;
-  height: 55px;
+  width: 310px;
+  height: 44px;
 }
 
 .entry-text{
@@ -225,6 +228,7 @@ input[class="button"]{
   justify-content: center;
   align-items: center;
   padding: 0 0;
+  margin-right: 10px;
   background-image: url(../img/entrance.svg);
   background-repeat: no-repeat;
   background-color: #a0b5a9;
@@ -233,7 +237,7 @@ input[class="button"]{
   height: 32px;
   background-position: 17px 6px;
   text-decoration: none;
-
+position: relative;
 }
 
 .login:hover .entry-text,
@@ -267,7 +271,11 @@ input[class="button"]{
   flex-direction: column;
   width: 239px;
   height: 173px;
-  justify-content: space-between;}
+  justify-content: space-between;
+  position: absolute;
+  top: 37px;
+  left: -183px;
+}
 
 .email-form{
   display: none;
@@ -301,17 +309,23 @@ input[class="button"]{
 
 .basket{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 0;
-  background-image: url(../img/basket.svg);
+  padding: 0 18px;
+  background-image: url(../img/basket-red.svg);
   background-repeat: no-repeat;
-  background-color: #a0b5a9;
+  background-color: #f8f7f4;
   border-radius: 16px; 
-  width: 100px;
+  min-width: 90px;
   height: 32px;
   text-decoration: none;
   background-position: 17px 6px;
+  position: relative;
+}
+
+.basket .entry-text{
+  color: #323232;
 }
 
 .basket:hover .entry-text,
@@ -321,11 +335,11 @@ input[class="button"]{
   justify-content: center;
   align-items: center;
   padding-left: 20px;
-  background-image: url(../img/basket-black.svg);
+  background-image: url(../img/basket-red.svg);
   background-repeat: no-repeat;
   background-color: #f8f7f4;
   border-radius: 16px; 
-  width: 100px;
+  min-width: 90px;
   height: 32px;
   font-size: 14px;
   font-family: "Roboto", Arial, sans-serif;
@@ -338,18 +352,21 @@ input[class="button"]{
 .basket:focus .basket-form,
 .basket:active .basket-form{
     display: flex;
-    background-color: #f8f7f4;
-    height: 242px;
-    width: 540px;
-    border-radius: 10px;
-    padding: 0 15px;
-    margin: 0 0;
-    flex-direction: column;
+   
+    position: absolute;
+    left: -270px;
+    top: 47px;
 }
 
 .basket-form{
   display: none; 
-
+  background-color: #f8f7f4;
+  height: 242px;
+  width: 540px;
+  border-radius: 10px;
+  padding: 0 15px;
+  margin: 0 0;
+  flex-direction: column;
 }
 
 .basket-list{
@@ -554,7 +571,7 @@ input[class="button"]{
   font-family: "Roboto", Arial, sans-serif;
   color: #ffffff;
   list-style: none;
-  padding: 0 0;
+  padding: 0 27px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -652,14 +669,14 @@ input[class="button"]{
   border-radius: 10px;
   background-image: url(../img/wafer.jpg);
   margin-bottom: 40px;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 27px;
+  margin-right: 27px;
   width: 1146px;
   height: 306px;
 }
 
 .about-gllacy-head{
-  width: 1100px;
+  width: 1106px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 24px;
   color: #323232;
@@ -675,7 +692,7 @@ input[class="button"]{
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  width: 1100px;
+  width: 1106px;
   display: flex;
   margin: 0;
   list-style: none;
@@ -705,8 +722,7 @@ input[class="button"]{
   display: flex;
   justify-content: space-between;
   width: 1146px;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0 27px;
   align-items: center;
   margin-left: 0;
   margin-right: 0;

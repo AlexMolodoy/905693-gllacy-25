@@ -27,57 +27,59 @@
            
           </ul>
           <ul class="navigation-user">
-                <li><a href="#" class="search"><span class="visually-hidden">search</span></a></li>
-                <li><a href="#"  class="login"><span  class="entry-text">Вход</span></a></li>
-                <li><a href="#"  class="basket"><span class="entry-text">Пусто</span></a></li>
+              <li class="search"><a href="#" class="search-content">search</a>
+                <form class="search-form" action="https://echo.htmlacademy.ru">
+                  <input type="text" placeholder="Что ищем?">
+                </form>
+              </li>
+              <li class="login"><a href="#" class="entry-text">Вход</a>
+                <form class="email-form" action="https://echo.htmlacademy.ru">
+                  <input type="email" class="mail-pas" name="email" placeholder="Электронная почта" required>
+                  <input type="password" class="mail-pas" name="password" placeholder="Пароль" required>
+                  <div class="bot-orient">
+                    <input type="submit" class="button" value="Войти">
+                    <div class="clm-text">
+                      <a class="form-support" href="#">Забыли пароль?</a>
+                      <a class="form-support" href="#">Новая регистрация</a>
+                    </div>
+                  </div> 
+                </form> 
+              </li>
+              <li class="basket"><a href="#" class="entry-text"><span>2 товара</span></a>
+                <form class="basket-form">
+                  <ul class="basket-list">
+                    <li class="basket-list-element">
+                      <img src="img/cross-small.svg" alt="exit" width="11" height="11">
+                      <img src="img/gllacy_1_1.jpg" alt="gllacy_1_1" width="33" height="33" style="border-radius: 50%">
+                      <span class="basket-element">Пломбир с апельсиновым джемом</span>
+                      <span class="basket-weight">1,5 кг х</span>
+                      <span class="basket-price">200 руб.</span>
+                      <span class="basket-value">300 руб.</span>
+                    </li>
+                    <li class="basket-list-element">
+                        <img src="img/cross-small.svg" alt="exit" width="11" height="11">
+                        <img src="img/gllacy_1_3.jpg" alt="gllacy_1_3" width="33" height="33" style="border-radius: 50%">
+                        <span class="basket-element">Клубничный пломбир с присыпкой из белого шоколада</span>
+                        <span class="basket-weight">1,5 кг х</span>
+                        <span class="basket-price">300 руб.</span>
+                        <span class="basket-value">450 руб.</span>
+                      </li>
+                  </ul>  
+                  <div class="underlist">
+                    <div class="value-underlist">
+                      <p class="final">Итого:</p>
+                      <p class="final-value">750 руб.</p>
+                    </div>
+                    <a class="button">Оформить заказ</a>
+                 </div>
+                </form>
+              </li>
           </ul>
       </nav>
       <div class="operation-mode">  
         <p class="header-timetable">С 10 до 20, ежедневно</p> 
         <p class="header-phone-nbr">8 812 450-25-25</p>
       </div>
-      <form class="search-form" action="https://echo.htmlacademy.ru">
-          <input type="text" placeholder="Что ищем?">
-      </form>
-        <form class="email-form" action="https://echo.htmlacademy.ru">
-            <input type="email" class="mail-pas" name="email" placeholder="Электронная почта" required>
-            <input type="password" class="mail-pas" name="password" placeholder="Пароль" required>
-            <div class="bot-orient">
-              <input type="submit" class="button" value="Войти">
-              <div class="clm-text">
-                <a class="form-support" href="#">Забыли пароль?</a>
-                <a class="form-support" href="#">Новая регистрация</a>
-              </div>
-            </div> 
-        </form> 
-        
-        <form class="basket-form">
-          <ul class="basket-list">
-            <li class="basket-list-element">
-              <img src="img/cross-small.svg" alt="exit" width="11" height="11">
-              <img src="img/gllacy_1_1.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33" style="border-radius: 50%">
-              <span class="basket-element">Пломбир с апельсиновым джемом</span>
-              <span class="basket-weight">1,5 кг х</span>
-              <span class="basket-price">200 руб.</span>
-              <span class="basket-value">300 руб.</span>
-            </li>
-            <li class="basket-list-element">
-                <img src="img/cross-small.svg" alt="exit" width="11" height="11">
-                <img src="img/gllacy_1_3.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33" style="border-radius: 50%">
-                <span class="basket-element">Клубничный пломбир с присыпкой из белого шоколада</span>
-                <span class="basket-weight">1,5 кг х</span>
-                <span class="basket-price">300 руб.</span>
-                <span class="basket-value">450 руб.</span>
-              </li>
-          </ul>  
-          <div class="underlist">
-            <div class="value-underlist">
-              <p class="final">Итого:</p>
-              <p class="final-value">750 руб.</p>
-            </div>
-            <a class="button">Оформить заказ</a>
-         </div>
-        </form>
     </header>
     <main>
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
