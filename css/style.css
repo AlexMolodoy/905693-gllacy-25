@@ -1,7 +1,7 @@
 body {
   margin: 0 0;
   background-color: #849d8f;
-  width: 1200 px;
+  width: 1146px;
   padding-left: 27px;
   padding-right: 27px;
   display: flex;
@@ -132,12 +132,12 @@ input[class="button"]{
 
 .submenu{
   display: none;
- /* height: 172px;
+  /* height: 172px;
   width: 144px;
   background-color: #f8f7f4;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;*/
+  flex-direction: column; */
 }
 
 .cat-list{
@@ -185,16 +185,31 @@ input[class="button"]{
   width: 32px;
   height: 32px;
   color: transparent;
-  
-
 }
 
 .search-form{
   display: none;
-  /*background-color: #f8f7f4;
+
+}
+
+.search:hover .search-form,
+.search:focus .search-form,
+.search:active .search-form{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #f8f7f4;
   border-radius: 10px;
   height: 85px;
-  width: 342px;*/
+  width: 342px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.search-form input{
+  width: 320px;
+  height: 55px;
 }
 
 .entry-text{
@@ -242,16 +257,20 @@ input[class="button"]{
   padding-left: 20px;
 }
 
-.email-form{
-  display: none;
-  /* display: flex; */
+.login:hover .email-form,
+.login:focus .email-form,
+.login:active .email-form{
+  display: flex;
   padding: 21px 19px;
   background-color: #f8f7f4;
   border-radius: 10px;
   flex-direction: column;
   width: 239px;
   height: 173px;
-  justify-content: space-between;
+  justify-content: space-between;}
+
+.email-form{
+  display: none;
 }
 
 .bot-orient{
@@ -315,16 +334,22 @@ input[class="button"]{
   background-position: 17px 6px;
 }
 
+.basket:hover .basket-form,
+.basket:focus .basket-form,
+.basket:active .basket-form{
+    display: flex;
+    background-color: #f8f7f4;
+    height: 242px;
+    width: 540px;
+    border-radius: 10px;
+    padding: 0 15px;
+    margin: 0 0;
+    flex-direction: column;
+}
+
 .basket-form{
   display: none; 
-  /* display: flex; */
-  background-color: #f8f7f4;
-  height: 242px;
-  width: 540px;
-  border-radius: 10px;
-  padding: 0 15px;
-  margin: 0 0;
-  flex-direction: column;
+
 }
 
 .basket-list{
@@ -430,6 +455,10 @@ input[class="button"]{
   
   text-align: center;
   color: #ffffff;
+}
+
+.slide-button{
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .slider-list {
@@ -887,7 +916,7 @@ input[class="button"]{
   width: 1146px;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0 0;
+  padding: 0 27px;
 
 }
 
@@ -1093,7 +1122,7 @@ input[class="button"]{
   margin-left: 0;
   margin-right: 0;
   width: 1146px;
-  padding: 0 0;
+  padding: 0 27px;
 }
 
 .gllacy-list{
