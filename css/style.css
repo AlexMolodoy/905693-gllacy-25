@@ -74,7 +74,6 @@ input[class="button"]{
   margin-top: 10px;
   width: 853px;
   font-size: 16px;
-  font-weight: bold;
   display: flex;
   align-items: center;
   list-style:none;
@@ -107,8 +106,30 @@ input[class="button"]{
 }
 
 .cat-str{
-  padding: 11px 15px;
+  font-family: "Roboto", Arial, sans-serif;
+  color: #323232;
+  font-size: 14px;
+}
+
+.cat-str:first-child{
+  font-weight: bold;
+}
+
+.cat-str:first-child::before{
+  content: "";
+  height: 1px;
   width: 128px;
+  background-color:#323232;
+  position: absolute;
+  left: 7px;
+  top: 34px;
+
+}
+
+.cat-str:hover,
+.cat-str:focus,
+.cat-str:active{
+  background-color: #fbded8;
 }
 
 
@@ -117,19 +138,16 @@ input[class="button"]{
   color: #323232;
   font-size: 14px;
   text-decoration: none;
-}
-.cat-list:nth-child(1){
-  font-weight: bold;
-
-  border-bottom: 1px #d1d0ce solid;
+  display: block;
+  padding: 9px 21px;
 }
 
 
 .navigation-nobacklight:hover .submenu,
 .navigation-nobacklight:focus .submenu,
-.navigation-nobacklight:focus .submenu{
-  height: 171px;
-  width: 143px;
+.navigation-nobacklight:active .submenu{
+  
+  width: 144px;
   padding: 0;
   background-color: #f8f7f4;
   border-radius: 5px;
@@ -141,37 +159,14 @@ input[class="button"]{
   top: 37px;
 }
 
-
-.cat-str:nth-child(1) {
-  width: 128px;
-  height: 38px;
-}
-
-.cat-str:nth-child(2){
-  width: 128px;
-  height: 36px;
-}
-
-.cat-str:nth-child(3){
-  height: 34px;
-  background-color: #d07058;
-  opacity: 0.1;
-}
-
-.cat-str:nth-child(4){
-  width: 128px;
-  height: 34px;
-}
-
-.cat-str:nth-child(5){
-  width: 128px;
-  height: 34px;
-}
-
 .inner-cat{
   background-color: #d07058;
-  color: #ffffff;
+  
+  border-radius: 15px;
 }
+
+
+
 
 .navigation-user{
   padding: 0 0;
@@ -539,7 +534,6 @@ input[class="button"]{
 
 .site-wrapper {
   min-width: 940px;
-  background-color: #849d8f;
   background-image: url("img/slider-item1.png");
   background-repeat: no-repeat;
   background-position: top center;
@@ -576,6 +570,9 @@ input[class="button"]{
   
   text-align: center;
   color: #ffffff;
+  padding-bottom: 320px;
+  margin-bottom: -320px;
+  margin-top: -75px;
 }
 
 .slide-button{
@@ -623,7 +620,7 @@ input[class="button"]{
 
 .slider-controls {
   position: absolute;
-  bottom: 33px;
+  bottom: 333px;
   left: -100px;
   z-index: 20;
   
@@ -1314,6 +1311,8 @@ input[class="button"]{
 
 .value-text{
   display: flex;
+  margin-top: -65px;
+  margin-bottom: 35px;
 }
 
 .price{
