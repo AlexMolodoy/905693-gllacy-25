@@ -827,14 +827,14 @@ input[class="button"]{
   width: 485px;
   padding-left: 57px;
   position: relative;
-  padding-top: 28px;
+  padding-top: 26px;
   line-height: 22px;
 }
 
 .tech-img{
   position: absolute;
   left: 0;
-  top: 20px;
+  top: 15px;
 }
 
 
@@ -947,7 +947,8 @@ input[class="button"]{
   justify-content: flex-end;
   width: 1146px;
   margin-bottom: 80px;
-  margin-right: 0px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .feedback-address{
@@ -971,6 +972,7 @@ input[class="button"]{
   font-weight: bold;
   color: #ffffff;
   padding: 13px 25px;
+  margin-top: 24px;
 }
 
 .small-feedback-text{
@@ -979,6 +981,11 @@ input[class="button"]{
   color: #323232;
   margin: 0;
   width: 175px;
+  line-height: 22px;
+}
+
+.small-feedback-text:nth-child(3){
+  margin-top: 24px;
 }
 
 .address{
@@ -986,7 +993,8 @@ input[class="button"]{
   font-size: 18px;
   color: #323232;
   font-weight: bold;
-  padding: 10px 0;
+  padding: 0;
+  line-height: 24px;
   margin: 0;
   width: 225px;
 }
@@ -1342,6 +1350,7 @@ input[class="button"]{
 
 .value-text{
   display: flex;
+  align-items: flex-end;
   margin-top: -65px;
   margin-bottom: 35px;
 }
@@ -1366,7 +1375,9 @@ input[class="button"]{
   font-size: 16px;
   color: #ffffff;
   text-align: center;
-  width: 267px;
+  width: 255px;
+  margin-top: -5px;
+  line-height: 22px;
 }
 
 .sheet-list{
@@ -1471,8 +1482,11 @@ input[class="button"]{
   align-items: center;
   list-style: none;
   flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 0;
   width: 350px;
+}
+.social-size li{
+  width: 48%;
 }
 
 .text-rich{
@@ -1481,16 +1495,19 @@ input[class="button"]{
   font-weight: bold;
   background-image: url(../img/heart.svg);
   background-repeat: no-repeat;
-  padding: 0 20px;
+  padding-left: 20px;
   color: #ffffff;}
 
 .text-thin{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   color: #ffffff;
-  padding: 0 20px;
+  padding: 0;
 }
 
+.left-pad{
+  padding-left: 20px;
+}
 
 .html-block{
   width: 190px;
