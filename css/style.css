@@ -1044,21 +1044,28 @@ input[class="button"]{
 
 /* inner page styles */
 
-.navigation-inner{}
+.navigation-inner{
+  margin-bottom: 20px;
+}
 
 .navigation-inner-list{
   list-style: none;
   display: flex;
+  padding-left: 27px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .navigation-inner-link{
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
   color: #ffffff;
 }
 
 .gllacy-category{
+  margin: 0;
   font-family: "Roboto", Arial, sans-serif;
   padding-left: 27px;
   font-size: 35px;
@@ -1072,14 +1079,16 @@ input[class="button"]{
   flex-wrap: wrap;
   list-style: none;
   padding: 0 27px;
+  margin-bottom: 40px;
+  margin-top: 15px;
 
 }
 
 .name{
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
-  padding: 10px 16px; 
+  padding: 5px 16px; 
   margin-bottom: 0;
 }
 
@@ -1122,7 +1131,7 @@ input[class="button"]{
   position: relative;
   background-color: #a9bab0;
   border-radius: 30px;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   width: 218px;
   height: 36px;
 }
@@ -1228,7 +1237,7 @@ input[class="button"]{
 
 .stuff-list::before{
   left: 0;
-  top: 0;
+  top: 0px;
   width: 25px;
   height: 25px;
   content: "";
@@ -1267,7 +1276,7 @@ input[class="button"]{
   color: #ffffff;
   background-color: #a9bab0;
   border: 2px #fcfcfc solid;
-  margin-top: 38px;
+  margin-top: 25px;
   /* position: absolute;
   top: 50%;
   transform: translateY(-50%); */
@@ -1281,8 +1290,8 @@ input[class="button"]{
 }
 
 .gllacy-list{
-  height: 325px;
-  margin-bottom: 37px;
+  /* height: 325px; */
+  margin-bottom: 0px;
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -1292,7 +1301,7 @@ input[class="button"]{
 
 .gllacy-element{
   width: 266px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1391,6 +1400,8 @@ input[class="button"]{
   padding: 0 27px;
   justify-content: flex-end;
   border-bottom: 2px solid #a9bbb1;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 
 .list-arrow-left{
@@ -1426,6 +1437,7 @@ input[class="button"]{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 
@@ -1445,6 +1457,7 @@ input[class="button"]{
   width: 186px;
   justify-content: space-between;
   padding: 0 0;
+  margin: 0;
 }
 
 .social-button{
@@ -1487,6 +1500,7 @@ input[class="button"]{
   flex-wrap: wrap;
   padding: 0;
   width: 350px;
+  margin: 0;
 }
 .social-size li{
   width: 48%;
@@ -1499,13 +1513,13 @@ input[class="button"]{
   background-image: url(../img/heart.svg);
   background-repeat: no-repeat;
   padding-left: 20px;
-  color: #ffffff;}
+  color: #ffffff;
+}
 
 .text-thin{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   color: #ffffff;
-  padding: 0;
 }
 
 .left-pad{
@@ -1518,6 +1532,7 @@ input[class="button"]{
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 0;
+  margin-bottom: 10px;
 }
 
 .html-img{}
