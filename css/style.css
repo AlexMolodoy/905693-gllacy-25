@@ -85,6 +85,7 @@ input[class="button"]{
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .navigation-nobacklight:first-child{
@@ -104,9 +105,14 @@ input[class="button"]{
   font-size: 16px;
   font-weight: bold;
   border-radius: 20px;
-  padding: 5px 14px;
+  padding: 6px 14px;
   text-decoration: none;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
+  height: 18px;
+}
+
+.upper{
+  margin-top: 10px; 
 }
 
 .submenu{
@@ -153,9 +159,12 @@ input[class="button"]{
 }
 
 
+
+
 .navigation-nobacklight:hover .submenu,
 .navigation-nobacklight:focus .submenu,
 .navigation-nobacklight:active .submenu{
+
   
   width: 144px;
   padding: 0;
@@ -171,12 +180,18 @@ input[class="button"]{
 
 .inner-cat{
   background-color: #d07058;
-  
   border-radius: 15px;
+  position: relative;
 }
 
-
-
+.navigation-nobacklight:hover::before{
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  height: 6px;
+  width: 87px;
+}
 
 .navigation-user{
   padding: 0 0;
@@ -245,8 +260,11 @@ input[class="button"]{
 }
 
 .search-form input{
-  width: 310px;
+  width: 280px;
   height: 44px;
+  border: 1px #cacac7 solid;
+  border-radius: 5px;
+  padding: 0 15px;
 }
 
 .entry-text{
@@ -324,6 +342,12 @@ input[class="button"]{
   justify-content: space-between;
 }
 
+.bot-orient .button{
+  width: 100px;
+  padding: 14px 25px;
+  font-size: 18px;
+}
+
 .clm-text{
   display: flex;
   flex-direction: column;
@@ -332,9 +356,11 @@ input[class="button"]{
 }
 
 .mail-pas{
+  padding: 0 14px;
   height: 44px;
-  border-radius: 10px;
-  width: 234px;
+  width: 206px;
+  border: 1px #cacac7 solid;
+  border-radius: 5px;
 
 }
 
@@ -342,6 +368,7 @@ input[class="button"]{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   color: #323232;
+  font-weight: lighter;
 }
 
 .basket{
@@ -456,26 +483,40 @@ input[class="button"]{
   padding-top: 20px;
   padding-left: 0;
   padding-right: 0;
-  
+  display: flex;
+  align-items: center;  
+}
+
+.cross{
+  margin-right: 14px;
+}
+
+.basket-ice{
+  border-radius: 50%;
+  margin-right: 14px;
 }
 
 .basket-element{
-  width: 216px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   color: #323232;
+  margin-right: 33px;
+  width: 217px;
 }
 
 .basket-weight{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   color: #323232;
+
+  margin-right: 5px;
 }
 
 .basket-price{
   font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
   color: #999999;
+  margin-right: 28px;
 }
 
 .basket-value{
@@ -488,6 +529,14 @@ input[class="button"]{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  border-top: 1px #cacac7 solid;
+  margin-top: 18px;
+}
+
+.underlist .button{
+  font-size: 18px;
+  padding: 12px 15px;
+
 }
 
 .value-underlist{
@@ -1003,8 +1052,8 @@ input[class="button"]{
 }
 
 .feedback-form{
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
   flex-direction: column;
   height: 442px;
   width: 477px;
