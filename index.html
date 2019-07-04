@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="js/script.js" rel="script">
   </head>
   <body>
     <header class="header-main">
@@ -235,15 +236,16 @@
                   <span class="address">8 812 450-25-25</span>
                   <span class="small-feedback-text">(с 10 до 20 ежедневно)</span>
               
-                <a class="button" href="form.html">Форма обратной связи</a>
+                <a class="button button-feedback" href="form.html">Форма обратной связи</a>
               </aside>
             </div>
         <img src="img/map-spb.jpg" height="430" width="1200" alt="map-spb">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562269868306!5m2!1sru!2sru" width="1200" height="430" class="real-map" allowfullscreen></iframe>
+        <div class="background-modal"></div>
         <form class="feedback-form" action="https://echo.htmlacademy.ru">
           <div class="feedback-head">
             <h1 class="feedback-form-head">Мы обязательно вам ответим!</h1>
-            <img src="img/cross-big.svg" alt="exit" width="20" height="20">
+            <a href="#" class="del-show"><img src="img/cross-big.svg" alt="exit" width="20" height="20"></a>
           </div>
           <input type="text" class="form-name" name="login" placeholder="Как вас зовут?">
           <input type="email" class="form-name" name="email" placeholder="Ваша почта для ответа">
@@ -277,5 +279,21 @@
           </div>
         </div>
       </footer>
+      <script>
+        var popup = document.querySelector(".button-feedback");
+        var feedback_form = document.querySelector(".feedback-form");
+        var background_modal = document.querySelector(".background-modal");
+        popup.addEventListener("click", function (evt){
+        evt.preventDefault(); 
+        feedback_form.classList.add("modal-show");
+        background_modal.classList.add("modal-show");
+        });
+        var close_popup = document.querySelector(".del-show");
+        close_popup.addEventListener("click", function (evt){
+        evt.preventDefault(); 
+        feedback_form.classList.remove("modal-show");
+        background_modal.classList.remove("modal-show");
+        });
+      </script>
   </body>
 </html>
