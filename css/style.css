@@ -143,11 +143,14 @@ input[class="button"]{
 }
 
 .cat-str:hover,
-.cat-str:focus,
-.cat-str:active{
+.cat-str:focus{
   background-color: #fbded8;
 }
 
+
+.cat-str:active{
+  background-color: #f6b5a5;
+}
 
 .cat-list{
   font-family: "Roboto", Arial, sans-serif;
@@ -162,10 +165,7 @@ input[class="button"]{
 
 
 .navigation-nobacklight:hover .submenu,
-.navigation-nobacklight:focus .submenu,
-.navigation-nobacklight:active .submenu{
-
-  
+.navigation-nobacklight:focus .submenu{
   width: 144px;
   padding: 0;
   background-color: #f8f7f4;
@@ -176,6 +176,10 @@ input[class="button"]{
   position: absolute;
   left: -7px;
   top: 37px;
+}
+
+.navigation-nobacklight:active .submenu{
+
 }
 
 .inner-cat{
@@ -726,6 +730,12 @@ input[class="button"]{
   background-color: #ffffff;
 }
 
+#product-1 ~ .site-wrapper label[for="product-1"]:hover,
+#product-2 ~ .site-wrapper label[for="product-2"]:hover,
+#product-3 ~ .site-wrapper label[for="product-3"]:hover {
+  background-color: #b2c1b7;
+}
+
 .stock{
   font-family: "Roboto", Arial, sans-serif;
   color: #ffffff;
@@ -891,7 +901,7 @@ input[class="button"]{
   align-items: center;
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 102px;
+  margin-bottom: 40px;
 }
 
 .gllacy-blog-news{
@@ -992,12 +1002,15 @@ input[class="button"]{
 }
 
 .aside-end{
+  position: absolute;
   display: flex;
   justify-content: flex-end;
-  width: 1146px;
+  width: 1173px;
+  margin-top: 63px;
   margin-bottom: 80px;
-  margin-right: auto;
+  margin-right: 27px;
   margin-left: auto;
+  z-index: 20;
 }
 
 .feedback-address{
@@ -1053,6 +1066,9 @@ input[class="button"]{
 
 .feedback-form{
   /* display: none; */
+  position: fixed;
+  left: 363;
+  top: 338;
   display: flex;
   flex-direction: column;
   height: 442px;
@@ -1091,6 +1107,27 @@ input[class="button"]{
   margin-bottom: 28px;
 }
 
+.map{
+  width: 1200px;
+  height: 430px;
+  margin-bottom: 18px;
+  position: relative;
+
+}
+
+.real-map{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* .img-map{
+  background-image: url(../img/pin.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
 /* inner page styles */
 
 .navigation-inner{
