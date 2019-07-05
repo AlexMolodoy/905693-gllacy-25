@@ -34,6 +34,10 @@ input[class="button"] {
 	height: 44px;
 }
 
+.overflow{
+	overflow-x: hidden;
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -970,6 +974,7 @@ input[class="button"] {
 	background-color: #fefefe;
 	border-radius: 10px;
 	justify-content: space-between;
+	position: absolute;
 }
 
 .feedback-ap .button {
@@ -1096,6 +1101,8 @@ input[class="button"] {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100vw;
+	left: calc(0px - (100vw - 100%) / 2);
 }
 
 .img-map {}
@@ -1105,6 +1112,8 @@ input[class="button"] {
 
 .navigation-inner {
 	margin-bottom: 21px;
+	position: relative;
+	z-index: 1;
 }
 
 .navigation-inner-list {
@@ -1175,6 +1184,10 @@ input[class="button"] {
 	height: 36px;
 	-webkit-appearance: none;
 	border: none;
+}
+
+.sort-selection::-ms-expand{
+	display: none
 }
 
 .name-scale {
