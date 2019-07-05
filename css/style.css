@@ -77,7 +77,9 @@ input[class="button"] {
 	width: 853px;
 	display: flex;
 	align-items: center;
-	list-style: none;
+  list-style: none;
+  position: relative;
+  z-index: 1;
 }
 
 .navigation-nobacklight {
@@ -115,7 +117,7 @@ input[class="button"] {
 
 .submenu {
 	display: none;
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .cat-str {
@@ -194,7 +196,9 @@ input[class="button"] {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	list-style: none;
+  list-style: none;
+  position: relative;
+  z-index: 1;
 }
 
 .search {
@@ -247,7 +251,7 @@ input[class="button"] {
 	width: 342px;
 	position: absolute;
 	top: 37px;
-	right: 0;
+  right: 0;
 }
 
 .search-form input {
@@ -889,6 +893,12 @@ input[class="button"] {
 	line-height: 30px;
 }
 
+.link-font:hover,
+.link-font:focus,
+.link-font:active{
+  color: #e84d37;
+}
+
 .outline-mail {
 	width: 560px;
 	height: 220px;
@@ -1107,13 +1117,33 @@ input[class="button"] {
 
 .img-map {}
 
+.about-icecream:hover,
+.about-icecream:focus,
+.about-icecream:active,
+.text-rich:hover,
+.text-rich:focus,
+.text-rich:active,
+.text-thin:hover,
+.text-thin:focus,
+.text-thin:active,
+.techno-info:hover,
+.techno-info:focus,
+.techno-info:active,
+.form-support:hover,
+.form-support:focus,
+.form-support:active{
+  color: #ffbc9e;
+}
 
 /* inner page styles */
+
+.inner-header{
+  z-index: initial;
+}
 
 .navigation-inner {
 	margin-bottom: 21px;
 	position: relative;
-	z-index: 1;
 }
 
 .navigation-inner-list {
@@ -1130,6 +1160,12 @@ input[class="button"] {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 14px;
 	color: #ffffff;
+}
+
+.navigation-inner-link:hover,
+.navigation-inner-link:focus,
+.navigation-inner-link:active{
+  color: #ffbc9e;
 }
 
 .gllacy-category {
@@ -1189,6 +1225,16 @@ input[class="button"] {
 .sort-selection::-ms-expand{
 	display: none
 }
+
+.sort-selection:hover{
+  color: #323232;
+  background-image: url(../img/icon-down-dir-black.svg);
+  background-repeat: no-repeat;
+}
+/* 
+.sort-list{
+  color: #323232;
+} */
 
 .name-scale {
 	display: flex;
@@ -1356,6 +1402,19 @@ input[class="button"] {
 	background-color: #a9bab0;
 	border: 2px #fcfcfc solid;
 	margin-top: 28px;
+}
+
+.send:hover, 
+.send:focus{
+  background-color: #fcfcfc;
+  color: #323232;
+}
+
+.send:active{
+  background-color: #eaeaea;
+  color: #323232;
+  border: none;
+  box-shadow: 0 -2px 20px #6a6b6a;
 }
 
 .navigation-gllacy {
@@ -1562,6 +1621,12 @@ input[class="button"] {
 	border-radius: 50%;
 	height: 32px;
 	width: 32px;
+}
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+	border: 3px solid #dae2de;
 }
 
 .twitter {
