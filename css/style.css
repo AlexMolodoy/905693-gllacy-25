@@ -97,7 +97,12 @@ input[class="button"] {
 .cat-background:focus,
 .cat-background:active {
 	color: #323232;
-	background-color: #f7f6f3;
+  background-color: #f7f6f3;
+  
+}
+
+.cat-background:active {
+  box-shadow: 0px -2px 1px 0px rgba(69, 69, 69, 1);
 }
 
 .cat-background {
@@ -128,6 +133,10 @@ input[class="button"] {
 
 .cat-str:first-child {
 	font-weight: bold;
+}
+
+.cat-str:nth-child(2){
+  background-color: #d07058;
 }
 
 .cat-str:first-child::before {
@@ -226,7 +235,8 @@ input[class="button"] {
 	width: 32px;
 	height: 32px;
 	background-image: url(../img/loupe-black.svg);
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  
 }
 
 .search-content {
@@ -252,6 +262,7 @@ input[class="button"] {
 	position: absolute;
 	top: 37px;
   right: 0;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .search-form input {
@@ -322,7 +333,9 @@ input[class="button"] {
 	justify-content: space-between;
 	position: absolute;
 	top: 37px;
-	right: 0;
+  right: 0;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 .email-form {
@@ -446,7 +459,9 @@ input[class="button"] {
 	display: flex;
 	position: absolute;
 	right: 0;
-	top: 37px;
+  top: 37px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 .basket-form {
@@ -1317,22 +1332,36 @@ input[class="button"] {
 	margin-right: 15px;
 }
 
+.fat-input[disabled]+.fat::before{
+  opacity: 0.4;
+}
+
 .fat::before {
 	left: 0;
 	top: 5px;
 	width: 22px;
 	height: 22px;
 	content: "";
-	background-image: url(../img/radio-off.svg);
+  background-image: url(../img/radio-off.svg);
+  opacity: 0.8;
 	background-repeat: no-repeat;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
+.fat::before {
+  opacity: 1.0;
+}
+
 .fat-input:checked+.fat::before {
 	background-image: url(../img/radio-on.svg);
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.fat-input:checked[disabled]+.fat::before {
+opacity: 0.4;
 }
 
 .no-margin {
@@ -1362,18 +1391,31 @@ input[class="button"] {
 	content: "";
 	background-size: 100%;
 	background-image: url(../img/checkbox-off.svg);
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  opacity: 0.8;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
+
+.stuff-input[disabled]+.stuff-list::before{
+  opacity: 0.4;
+}
+
+.stuff-input:checked[disabled]+.stuff-list::before{
+  opacity: 0.4;
+}
+
 .stuff-input:checked+.stuff-list::before {
-	background-image: url(../img/checkbox-on.svg);
+  background-image: url(../img/checkbox-on.svg);
+  opacity: 0.8;
 	background-repeat: no-repeat;
 	width: 24px;
 	height: 24px;
 }
+
+
 
 .pad-left {
 	padding-left: 35px;
