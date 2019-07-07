@@ -126,18 +126,22 @@ input[class="button"] {
 }
 
 .cat-str {
-	font-family: "Roboto", Arial, sans-serif;
+	/* font-family: "Roboto", Arial, sans-serif;
 	color: #323232;
-	font-size: 14px;
+	font-size: 14px; */
 }
 
 .cat-str:first-child {
 	font-weight: bold;
 }
 
-.cat-str:nth-child(2){
+.cat-inner{
   background-color: #d07058;
 }
+
+
+
+
 
 .cat-str:first-child::before {
 	content: "";
@@ -165,6 +169,10 @@ input[class="button"] {
 	text-decoration: none;
 	display: block;
 	padding: 9px 21px;
+}
+
+.cat-inner-text{
+  color: #ffffff;
 }
 
 .navigation-nobacklight:hover .submenu,
@@ -1070,7 +1078,18 @@ input[class="button"] {
 }
 
 .modal-show {
-	display: flex;
+  display: flex;
+  animation-name: appearance;
+  animation-duration: 0.8s;
+}
+
+@keyframes appearance{
+  0% { opacity: 0.05; }
+  20% {opacity: 0.1;}
+  40% {opacity: 0.15;}
+  60% {opacity: 0.2;}
+  80% {opacity: 0.25;}
+  80% {opacity: 0.3;}
 }
 
 .feedback-head {
